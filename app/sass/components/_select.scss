@@ -1,13 +1,14 @@
 .select {
     &-button {
+        background-color: $grey-2;
+        border: 0.2rem solid $blue-1;
+        border-radius: 0.4rem;
         width: 100%;
         min-width: 29rem;
         font-size: 2rem;
         font-weight: 500;
         line-height: 2.4rem;
-        background-color: $white;
         padding: 1.6rem;
-        border: 0.2rem solid $green-1;
         color: $green-1;
         cursor: pointer;
         display: flex;
@@ -42,11 +43,14 @@
 }
   
 .selected-value {
+    color: #5A6970;
 	text-align: left;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
 }
   
 .arrow {
-	background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L0 1.51351L1.4 0L6 4.97297L10.6 1.86789e-06L12 1.51352L6 8Z' fill='%23009C9D'/%3E%3C/svg%3E%0A");
+	background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L0 1.51351L1.4 0L6 4.97297L10.6 1.86789e-06L12 1.51352L6 8Z' fill='%235A6970'/%3E%3C/svg%3E%0A");
 	background-size: contain;
 	width: 1.2rem;
 	height: 0.8rem;
