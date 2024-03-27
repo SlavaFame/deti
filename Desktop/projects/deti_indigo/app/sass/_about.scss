@@ -1,0 +1,206 @@
+#contacts {
+    margin-top: 30px;
+}
+
+#contacts .title {
+    color: $blue;
+    text-transform: uppercase;
+}
+
+#contacts .box .number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+#contacts .box .number p {
+    font-size: 2.6rem;
+    margin: 0;
+    line-height: 3rem;
+}
+
+#contacts .box .number img {
+    margin-right: 8px;
+}
+
+#contacts .box .number p span {
+    font-weight: 700;
+}
+
+#contacts .big {
+    height: 385px;
+    max-width: 100%;
+}
+
+#contacts .box .text h3 {
+    color: #292929;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 0;
+}
+
+#contacts .box .text p {
+    color: #292929;
+}
+
+#contacts .box .text p span {
+    font-weight: 700;
+}
+
+#contacts .about__specialists .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#contacts .about__specialists .box .info h4 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    color: $blue;
+    margin-bottom: 8px;
+}
+
+#contacts .about__specialists .box .info h4 span { 
+    font-weight: 500; 
+}
+
+#contacts .about__specialists .box .info p {
+    font-weight: normal;
+    color: #6A6A6A;
+    margin: 15px 0;
+}
+#contacts .about__specialists .box .img {
+    height: 320px;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex: 1;
+}
+
+#contacts .about__specialists .box .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    flex: 1;
+    margin-left: 20px;
+}
+
+#contacts .about__specialists .box .info .button {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.contacts_phone {
+	margin-bottom: 1rem;
+    &__link {
+	    font-size: 2.25rem!important;
+	    line-height: 3rem!important;
+	    padding-bottom: 1rem;
+        &:before {
+	        content: "";
+	        background: url(images/icons/phone.png) center no-repeat;
+	        background-size: 3rem;
+	        padding: 1.5rem;
+	        margin-right: 1rem;
+        }
+    }
+}
+
+.contacts_tel-text {
+    font-size: 1.4rem;
+    line-height: 1;
+    color: $blue;
+}
+
+.about__specialists {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.job .box {
+    display: flex;
+    align-items: center;
+}
+
+.job .box .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.job .box .img {
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex: 1;
+}
+
+.job .box .information h4 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    color: #00aaea;
+    margin-bottom: 8px;
+}
+
+.tiles_achievements {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tiles_achievements .col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+#achievements .box.box_1, #achievements .box.box_2, #achievements .box.box_3, #achievements .box.box_4 {
+    padding-left: 1.5rem;
+}
+#achievements .box {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box_1 {
+    background: #00aaea;
+}
+.box_2 {
+    background: #3DC2F4;
+}
+.box_3 {
+    background: #6ECFF4;
+}
+.box_4 {
+    background: #00aaea;
+}
+.box_5 {
+    background: #00aaea;
+}
+.box_6 {
+    background: #00aaea;
+}
+
+#achievements .box h3 {
+    font-size: 3.6rem;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+}
+#achievements .box p {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}

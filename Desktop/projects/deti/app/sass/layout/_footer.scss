@@ -1,0 +1,140 @@
+
+	.trees {
+		position: relative;
+		background-size: 100% 100%;
+		height: 81vh;
+	}
+
+	.footerWrap {
+		position: absolute;
+		bottom: 0;
+		background: rgba(212, 235, 223, 0.7);
+		padding: 1.6rem 0;
+	}
+
+	.navBottom {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		font-size: 1.3rem;
+		line-height: 1.6rem;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		a {
+			color: #365d46;
+			text-decoration: none;
+
+			&:hover{
+				color: $blue
+			}
+		}
+	}
+
+	.footerLine {
+		border: none;
+		background-color: #000;
+		margin: 0.5rem auto;
+		padding: 0.1rem;
+	}
+
+	.sendWrap {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.sendDirector, .consultationBtn {
+		color: $white;
+		background-color: $green;
+		padding: 1rem;
+		margin: 0.5rem 0.5rem 0.5rem 0;
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		text-transform: uppercase;
+		text-align: center;
+		border-radius: $brd-radius;
+		outline: none;
+		&:focus {
+			outline: none
+		} 
+		&:hover {
+			cursor: pointer;
+			@include transition(all 0.35s ease-in-out);
+            background-color: $blue;
+		}
+	}
+
+	.city {
+		margin: 1rem 0 0 2rem;
+		text-align: right;
+
+		&-head {
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			font-weight: 600;
+			color: $blue;
+			text-transform: uppercase;
+		}
+
+		p, a {
+			font-size: 1.2rem;
+			line-height: 1.5rem;
+		}
+	}
+
+	.warning {
+		text-align: center;
+		font-size: 2.39rem;
+	}
+
+	.licencies {
+		max-width: 57.8rem;
+		font-size: 1.3rem;
+		line-height: 1.6rem;
+
+		a { 
+			text-decoration: none;
+		}
+	}
+
+	.navRounds {
+		position: fixed;
+		top: 25%;
+		right: 2%;
+		transform: translateY(50%);
+		z-index: 99;
+
+		a {
+			text-align: center;
+		}
+
+		&-item {
+			background-color: $white;
+			border: 0.2rem solid $blue;
+			color: $blue;
+			border-radius: 100%;
+			width: 3rem;
+			height: 3rem;
+			margin: 1.5rem 0;
+			text-align: center;
+
+			i {
+				margin-top: 0.5rem;
+				font-size: 1.5rem;
+			}
+
+			&:hover {
+				background-color: lighten($blue, 12%);
+				@include transition(all 0.35s ease-in-out);
+				cursor: pointer;
+				color: $white;
+			}
+		}
+	}

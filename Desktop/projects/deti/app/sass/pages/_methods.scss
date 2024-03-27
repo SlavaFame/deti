@@ -1,0 +1,94 @@
+.methodsTiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25.6rem, 1fr));
+	position: relative;
+}
+
+.methodTilesItem {
+	background-color: $white;
+	border: 0.2rem dashed $light-blue;
+	border-radius: 1rem;
+	padding: 1rem;
+	min-height: 34rem;
+
+	h5 {
+		margin: 1rem 0;
+		text-transform: uppercase;
+		font-size: 1.7rem;
+		line-height: 1.8rem;
+	}
+
+	a {
+		text-decoration: none;
+		&:after {
+			content: '';
+			padding: 0 1rem;
+			background: url(img/icons/right-chevron-green.svg);
+			background-repeat: no-repeat;
+			background-size: 1rem;
+			background-position: 0.7rem;
+		}
+	}
+}
+
+.methodPic {
+	height: 35.6rem;
+	margin: 0;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+@media (max-width: 768px){
+	.methodPic {
+		height: 20rem;
+	}
+}
+
+.methodTilesDesc {
+	padding-bottom: 1rem;
+}
+
+.methodsList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+	gap: 5rem;
+	padding: 2rem 0;
+	margin: 0 auto;
+	max-width: 96rem;
+}
+
+.methodItem {
+	height: 30.8rem;
+	min-width: 30rem;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	line-height: 2.4rem;
+	
+	&-head {
+		text-transform: uppercase;
+		font-size: 2.4rem;
+		margin-bottom: 1rem;
+	}
+}
+
+.methodDesc {
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+		
+	&-head {
+		color: $blue;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}

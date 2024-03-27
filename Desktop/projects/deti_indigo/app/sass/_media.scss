@@ -1,0 +1,921 @@
+@media only screen and (min-device-width: 240px) and (max-device-width: 320px) {
+	.hint {
+		display: none
+	}
+
+	a.tip:hover span {
+		left: -140px;
+	}
+	.fastMenu-item {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+
+	.specialist_annotation {
+		flex-flow: wrap column;
+	}
+
+	.direction__slider, .method__slider {
+		max-width: 100%;
+	}
+
+	.direction__slider__photo, .method__slider__photo {
+		width: 100%;
+	}
+	
+	.infoTop {
+		padding: 0 1rem;
+	}
+
+	.salesWrap__list-item {
+		margin-bottom: 0;
+	}
+
+	.methodTilesItem {
+		height: auto;
+	}
+	
+	.reviewsMov_item__video {
+		height: 23rem;
+	}
+}
+
+@media screen and (max-device-width: 321px) { 
+	.time { display: none }
+	
+	.addressTop { flex-basis: auto }
+	
+	.allSpecialists, .allNews { padding: 0.5rem 0.01rem }
+
+	.navMenu_item__link, .navMenu_sub__item  {
+		padding: 0.5rem;
+	}
+}
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 424px) {
+	.hint {
+		display: none
+	}
+
+	a.tip:hover span {
+		left: -95px;
+	}
+	.fastMenu-item {
+		width: 47%;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+	.b24-form-field-email { 
+		display:none; 
+	}
+
+	.opinion_inner__head {
+		text-align: center;
+		border-radius: 0;
+	}
+
+	.opinion_inner__content-specialist {
+		height: auto;
+	}
+
+	.opinion_inner__content-specialist--photo img{
+		width: auto;
+	}
+
+	.opinion_inner__content-specialist--photo img,
+	.opinion_inner__content-specialist--desc {
+		top: 0;
+	}
+
+	.opinion_inner__content-text {
+		flex: 1 100%;
+		padding: 0;
+	}
+
+	.articleAnnounce button {
+		margin: 0;
+	}
+
+	.dms_icon{
+		width:100%;
+		margin:0;
+		flex-direction:row;
+		justify-content:space-around;
+	}
+	
+	.dms_icon,.price_dms__bold,.price_dms__text {
+		font-size:1.5rem;
+	}
+
+	.header_fluid__info{ 
+		order:1; 
+		flex-direction:column; 
+	}
+
+	.header_fluid__menu{ 
+		order:0; 
+		z-index: 10099 
+	}
+
+	.articles_slider__item-text p, 
+	.testimonials_slider__item-text p, 
+	.videoreviews_slider__item-text p,
+	.articleWrap_questions-item--ask_text p,
+	.articleWrap_questions-item--ask_photo p {
+		font-size: 1.5rem;
+	}
+
+	.articles_slider__item-text, 
+	.testimonials_slider__item-text, 
+	.videoreviews_slider__item-text {
+		padding: 0;
+	}
+
+	.article_courses-item, .article_methods-item {
+		width: 100%;
+	}
+
+	.articleWrap {
+		h2, h3, h4, h5, h6 {
+			font-size: 1.5rem;
+		}
+	}
+
+	.fastMenu__inner {
+		gap: 2rem;
+	}
+
+	.videoreviews_slider__item,
+	.articles_slider__item,
+	.testimonials_slider__item {
+		flex-direction: column;
+	}
+
+	#infographic {
+		margin: 4.4rem 0 4.4rem;
+	}
+
+	.infographic {
+		justify-content: center;
+	}
+
+	.videoreviews_slider__nav-item,
+	.articles_slider__nav-item,
+	.testimonials_slider__nav-item {
+		margin: 0 auto 1.5rem;
+	}
+
+	#methodics .info.first,
+	#methodics .info.second .info-header,
+	#methodics .info.second .info-desc,
+	#methodics .info.third,
+	#methodics .info.fourth .info-header,
+	#methodics .info.fourth .info-desc,
+	#methodics .info.fifth {
+		padding: 1.5rem;
+	}
+
+	.skype_btn, .q_btn  {
+		font-size: 1.5rem;
+	}
+	
+	.faq_answer__specialist-bottomText iframe,
+	.options iframe {
+		height: 194px;
+	}
+
+	.news_tiles-item {
+		margin-bottom: 1rem;
+		padding: 0;
+		max-width: 100%
+	}
+
+	.sectificates__slider-main__slide .lazy {
+		background-size: contain;
+		height: 26rem;
+	}
+
+	.sectificates__slider-nav__slide .mini-images {
+		width: auto;
+	}
+
+	.articleWrap_questions-item--ask, 
+	.articleWrap_questions-item--answer {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.articleWrap_questions-item {
+		gap: 0;
+		flex-wrap: wrap;
+	}
+
+	.articleWrap_parents__steps-item {
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5){
+			flex: 1 100%;
+		}
+	}
+
+	.articleWrap_statistics__green:nth-child(2),
+	.articleWrap_statistics__blue:nth-child(2),
+	.sendWhite__inputs input, 
+	.sendWhite__inputs button {
+    	width: 100%;
+	}
+
+	.address, .opinion_inner__content-nav {
+		flex-direction: column;
+	}
+
+	.city, .docs {
+		text-align: center!important;
+		margin: 0!important;
+	}
+
+	.personalItem {
+		width: 78%;
+		margin: 0 auto;
+		&__desc {
+			height: auto;
+		}
+	}
+
+	.methods_nav, .diseases_nav, .reviews_nav {
+		flex-direction: column;
+	}
+	
+	.reviewsItem {
+		margin: 0;
+	}
+
+	.specialists {
+		margin-top: 2rem;
+		grid-gap: 1rem;
+		justify-items: center;
+	}
+
+	.specialist_annotation__photo-medal--small {
+		width: calc(100% / 2);
+    	margin: 1rem auto;
+	}
+
+	.specialist_annotation__photo img {
+		height: auto;
+	}
+
+	.nonresident_list__item-content--photo {
+		margin-bottom: 1rem;
+	}
+
+	.card_text {
+		height: 26%;
+	}
+
+	.allArticles, .allMethods, .allNews, .allReviews, .allSales, .allSpecialists {
+		font-size: 1.25rem;
+	}
+
+	.btn__greenTop-mobile { 
+		font-size: 1.25rem;
+		margin-top: 0;
+    	width: 17rem;
+		height: auto;
+	}
+
+	.consultationBtn, .sendDirector, .sendReview {
+		font-size: 1.4rem;
+	}
+	
+	.tiles {
+		grid-gap: 2rem;
+	}
+	
+	#canvas, #dom_overlay_container {
+		height: 7rem;
+		max-width: 95%;
+	}
+
+	input[type="email"],
+	input[type="date"],
+	input[type="time"],
+	.userInfo_label__email,
+	.userInfo_label__date,
+	.b24-form-field-email {
+		display: none;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1200px){
+	.fastMenu { display:none; }
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 1024px) {
+	.hint {
+		display: none;
+	}
+
+	a.tip:hover span {
+		left: 0;
+	}
+	.disease__block__inner {
+		padding: 0;
+	}
+	.availability__block {
+		padding: 0;
+		gap: 0;
+	}
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.navMenu_item { 
+		padding: 0!important;
+	}
+}
+
+@media screen and (max-device-width: 426px) {
+	.nonresident_list__item-content--text { 
+		flex: auto;
+	}
+	.dms_outer{
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width:576px){
+	.articles_slider__item-video--bg, .methods_slider__item-video--bg, .testimonials_slider__item-video--bg, .videoreviews_slider__item-video--bg {
+		height: 32rem;
+	}
+	.articles_slider__nav-item, .methods_slider__nav-item, .testimonials_slider__nav-item, .videoreviews_slider__nav-item {
+		flex: 1 1 48%;
+	}
+	
+	.guide, .methods_list, .promo_list, .reviews_list, .specialists_list {
+		justify-content: center;
+	}
+	
+	.articleDesc img {
+		width: 100%;
+		margin: 0 0 1rem 0;
+	}
+	
+	.accordion {
+		margin: 0 -1.5rem;
+	}
+	
+	.table-cell {
+		word-break: break-all;
+	}
+	
+	.specialist_annotation {
+		flex-flow: wrap column;
+	}
+	
+}	
+
+@media screen and (max-device-width: 576px) {
+	.reviews_item__photo {
+		width: 25rem;
+	}
+	.articlePrice_header:before {
+		left: -4.1rem;
+	}
+
+	.articlesItem .articlesPhoto, .articlesItem_photo, .saleItem .articlesPhoto, .saleItem_photo, .methodItem{
+		margin: 0 -1.5rem;
+	}
+
+	.sendReviewOuter{
+		margin: 0;
+	}
+
+	.aboutCenterInfo, 
+	.activity {
+		h1, h2 {
+			font-size: 2.5rem;
+		}
+	}
+
+	.articlesDesc {
+		h4 {
+			margin: 1rem 0;
+		}
+	}
+
+	.navRounds-item {
+		margin: 1rem 0;
+	}
+
+	.articlePrice_header,
+	.articleRead_header,
+	.articleImportant_header,
+	.articleFaq_header {
+		width: auto;
+		text-align: right;
+		padding-right: 1rem;
+	}
+
+	.articleWrap {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		&_nav {
+			margin: 1rem -1.5rem;
+		}
+		h1 {
+			font-size: 1.8rem;
+			line-height: 2rem;
+		}
+	}
+
+	.articlePic {
+		flex: 1 1 100%;
+		margin: 0 -1.5rem;
+	}
+
+	.articleAnnounce,
+	.opinion_inner__content-specialist--desc {
+		padding: 0 0 1rem 0;
+	}
+
+	.opinion_inner__content-specialist,
+	.opinion_outer {
+		margin: 0;
+	}
+	
+	.articleWrap_statistics__desc, 
+	.videoreviews_slider__nav-link, 
+	.testimonials_slider__nav-link, 
+	.methods_slider__nav-link, 
+	.articles_slider__nav-link,
+	.articleWrap_map__cities-item, 
+	.saleItem__link, 
+	.articlesItem__link {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+
+	.b24-widget-button-position-bottom-right {
+		bottom: 1rem!important; 
+		right: 0.5rem!important;
+	}
+
+	.saleItem_desc { 
+		height: auto;
+		padding: 0; 
+	}
+
+	.articlesItem_desc h3, .saleItem_desc h3 {
+		margin: 1rem 0 0 0;
+	}
+
+	.saleItem, .articlesItem { 
+		flex-wrap: wrap; 
+	}
+
+	.submenu { 
+		top: 0; 
+		width: 92%; 
+		margin: 0 auto;
+	}
+
+	.citySelect, .timeWork, .transportSchema { 
+		font-size: 1.4rem;
+	}
+
+	.method_nav__item, .disease_nav__item { 
+		flex: 1 100%; 
+	}
+
+	.btn__greenTop, .phoneListWrap {
+		font-size: 1.5rem;
+	}
+
+	.sort, .disease_nav__item { flex: 1 100%!important; }
+
+	.phone { 
+		flex-direction: row;
+	}
+
+	.phoneList { letter-spacing: 0; }
+
+	.navRounds { right: 4%; bottom: 40%; }
+
+	.personalItem__inner {
+		img { height: 44rem; }
+	}
+
+	.newsItem { 
+		padding: 1rem;
+		margin: 0 0 1rem 0;
+	}
+
+	.popup {
+		overflow: scroll;
+		height: auto;
+		&-form {
+			font-size: 1.5rem;
+			overflow: scroll;
+			
+			button {
+				margin: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	.personalItem__desc { 
+		&-link, 
+		&-btn{
+			position: relative;
+			padding: 1rem;
+		}
+		
+		button {
+			position: relative;
+		} 
+		
+		p {
+			margin-bottom: 3rem;
+			line-height: 1.8rem;
+		}
+	}
+
+	.nonresident_list__item-content--text {
+		padding-left: 0;
+	}
+
+	.nonresident_reviews__item-desc p { 
+		line-height: 1.8rem;
+	}
+
+	.specialist_annotation__desc {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.burger {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.burger_top {
+		display: flex;
+	}
+
+	.logo, 
+	.btn__greenTop, 
+	.cloud,  
+	.phoneListWrap,
+	#sliderTop {
+		display: none;
+	}
+
+	.navMenu {
+		display: none;
+		position: static;
+		height: auto;
+		width: 100%;
+		&_item {
+			text-align: center;
+			padding: 0;
+			border-bottom: 0.1rem solid #EAEAEB;
+			&__link {
+				padding: 0.8rem;
+			}
+		}
+		&_sub {
+			display: none;
+			position: static;
+			background: #fff;
+			&__item {
+				padding: 0.5rem;
+			}
+		}
+	}
+
+	.navMenu_item:hover .navMenu_sub {
+		flex-direction: column;
+	}
+
+	.popup {
+		width: 100%;
+		font-size: 1.5rem; 
+	} 
+
+	.articleWrap_parents__head h2 {
+		font-size: 1.7rem;
+	}
+
+	.headerWrap { 
+		height: 3rem; 
+	}
+
+	.navOuter {
+		background-color: #fff;
+		display: flex;
+        flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    }
+
+	.sticky {
+		overflow-y: scroll;
+	}
+
+	.right_column h2, .nonresident_list h3, .nonresident h3 { 
+		font-size: 1.5rem;
+		line-height: 1.8rem; 
+		margin-bottom: 0;
+	}
+
+	.phone { 
+		order: 2;
+	}
+
+	.fixed_phone { 
+		display: flex;
+	}
+
+	.nav label {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+		li {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-bottom: 0.1rem solid #EAEAEB;
+		}
+		a {
+			display: flex;
+			margin: 0;
+			font-size: 1.5rem;
+			justify-content: center;
+			align-items: center;
+			height: 3.7rem;
+		}
+	}
+
+	.menuList {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#toggle:checked + .menu {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		flex-wrap: wrap;
+		background: rgba(0,0,0,0.7)
+	}
+
+	.sliderTopText h1 {
+		font-size: 2rem;
+	}
+
+	.btn_Top { 
+		border-radius: 1rem; 
+	}
+
+	.personalCards, 
+	.sliderNewsWrap, 
+	.sliderReviewsWrap {
+		padding: 1rem 0;
+	}
+
+	.navBottom, .info, .sendWrap {
+		flex-direction: column;
+	}
+
+	.headingPag {
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.navBottom {
+		padding: 0;
+		li {
+			padding: 0;
+		}
+	} 
+
+	.newsItemPhoto {
+		height: 21rem;
+	}
+
+	.salesHead, 
+	.methodsHead, 
+	.reviewsHead, 
+	.articlesHead,
+	.newsHead,
+	.specialistsHead {
+		margin-top: 1.5rem;
+		align-items: center;
+		flex-wrap: nowrap;
+
+		h2 {
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+			margin: 0;
+		}
+	}
+
+	.countSales, 
+	.countMethods, 
+	.countReviews, 
+	.countArticles,
+	.countSpecialists {
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+
+	.allSales, 
+	.allSpecialists,
+	.allNews,
+	.allMethods, 
+	.allReviews, 
+	.allArticles {
+		border-left: 0.2rem solid;
+	}
+
+	.reviewsDesc {
+		line-height: 1.8rem;
+	}
+
+	.footerWrap {
+		position: relative;
+	}
+
+	.trees {
+		background-position: left;
+		background-size: cover;
+	}
+
+	.warning {
+		letter-spacing: -0.2rem;
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+
+	.faq__body {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+
+	.availability__block {
+		gap: 0;
+   		padding: 0 0;
+	}
+
+	.howMuch__desc__inner img {
+		margin-right: 1.7rem;
+		padding-left: 0;
+	}
+
+	.disease__block__inner {
+		padding: 0;
+		gap: 0;
+		margin: 0 -1.5rem;
+	}
+
+	.disease__text {
+		font-size: 2rem;
+		line-height: 2.4rem;
+	}
+
+	.doctor__slider-main .slick-track, .doctor__slider-treat .slick-track {
+		gap:0;
+	}
+
+	.doctor__slider {
+		margin: 1rem 0;
+	}
+
+	.doctor__info__photo {
+		height: auto;
+		min-height: 21rem;
+		width: 17rem;
+		background-size: contain;
+	}
+
+	.doctor__slider__nav__photo {
+		width: 11.8rem;
+		height: 16rem;
+	}
+	
+	.doctor__info__bigtext {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+	.doctor__info__desc {
+		padding: 0;
+		flex:0;
+	}
+
+	.doctor__slider__nav-item {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		text-align: left;
+	}
+
+	.btn_blue {
+		font-size: 1.3rem;
+		padding: 1rem 2rem;
+	}
+
+	.doctor__info__speciality {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+
+}
+
+@media screen and (max-width: 769px) {
+	.methods_list, .specialists_list, .reviews_list, .guide {
+		h3 {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.header_fluid__info { 
+		order: 2; 
+	}
+	.phone { 
+		flex: 0 23rem; 
+	}
+	.btn__greenTop, .btn__greenTop-mobile { 
+		font-size: 1.5rem; 
+		margin-bottom: 0;
+		width: 22rem; 
+	}
+	.phoneListWrap { 
+		font-size: 1.5rem; 
+	}
+	.address { 
+		flex-direction: row; 
+	}
+}
+
+@media screen and (max-device-width: 992px) {
+	.menu li a, .navBottom li a { 
+		font-size: 1.5rem; 
+		line-height: 1.8rem; 
+	}
+	.navbar { 
+		height: 3rem;
+	}
+}	
+
+@media only screen and (min-width: 1024px) {
+	.questionWrap {
+		display: none;
+	}
+	body.modal-open .main-wrapper,
+	body.modal-open .navRounds,
+	body.modal-open #navbar.sticky,
+	body.modal-open footer{
+		padding-right: 1.7rem!important;
+	}
+	body.modal-open .trees{
+		background-position-x: 1.9rem;
+	}
+}
+
+@media only screen and (max-width: 1155px) {
+	.btn__greenTop {
+		font-size: 1.4rem;
+	}
+
+	.navMenu_item__link {
+		padding: 1rem 0;
+	}
+
+	.phone {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 1330px) {
+	.navMenu_item__link {
+		padding: 1rem 0;
+	}
+}

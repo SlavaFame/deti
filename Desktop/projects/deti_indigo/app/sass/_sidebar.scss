@@ -1,0 +1,316 @@
+/*
+.leftMenuItem_selected { 
+	background-color: $light-green; 
+}
+
+.leftMenu_btn-green {
+	font-family: $main-font;
+	font-weight: 500;
+	background-color: $green;
+	font-weight: bold;
+    &:hover {
+    	background-color: $green!important;
+    }
+    a {
+    	color: #fff;
+    }
+}
+
+.btn_blue__rect {
+	padding: 1rem;
+	background-color: $blue;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.sidebar {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+}
+
+.sidebarHeader, 
+.sidebarSalesHeader, 
+.sidebarReviewsHeader, 
+.sidebarMethodsHeader {
+	padding: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	background-color: $blue;
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0.3rem;
+		bottom: 0.3rem;
+		right: 0.3rem;
+		left: 0.3rem;
+		border: 0.2rem dashed #fff;
+		border-radius: 1rem 1rem 0 0;
+	}
+	h3 {
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.sidebarInner {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.sidebarInner,
+.sidebarMethodsInner {
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+
+	ul { 
+		margin: 0;
+		border-left: 0.1rem dashed $blue;
+		border-right: 0.1rem dashed $blue; 
+	}
+
+	li {
+		padding: 0 0.5rem;
+		text-align: center;		
+
+		&:hover, &:focus {
+			background-color: #e8edb7;
+			cursor: pointer;
+			transition: 0.35s ease-in-out;
+			a {
+    			color: $blue!important;
+    			transition: 0.35s ease-in-out;
+			}
+		}
+		a {
+			text-decoration: none;
+			padding: 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+	}
+	hr {
+		background-color: $blue;
+		margin: 0 auto;
+		height: 0.1rem;
+		border: 0;
+	}
+}
+
+.sidebarReviews,
+.sidebarSales {
+	margin-bottom: 2rem;
+	h3{
+		text-transform: uppercase;
+	}
+}
+
+.sidebarSales {
+	background-size: cover;
+	background-position: top center;
+	img {
+		max-width: 100%;
+		border-bottom: 0.1rem dashed $blue;
+	}
+
+	&_btn {
+		text-decoration: none;
+    	padding: 0.6rem;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	width: 100%;
+    	text-transform: uppercase;
+    	background-color: $green;
+    	color: #fff;
+    	font-weight: bold;
+    	border-radius: 0 0 1rem 1rem;
+    	border-left: 0.1rem dashed $blue;
+    	border-right: 0.1rem dashed $blue;
+    	border-bottom: 0.1rem dashed $blue;
+
+    	&:hover, &:focus {
+			background-color: #e8edb7;
+			color: $blue;
+			cursor: pointer;
+			transition: 0.35s ease-in-out;
+		}
+	}
+}
+
+.sidebarSalesPic {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sidebarSalesHeader_link {
+	text-decoration: none;
+	position: relative;
+	z-index: 9;
+	color: #fff;
+}
+
+.sidebarSalesDesc {
+	border-left: 0.1rem dashed $blue;
+	border-right: 0.1rem dashed $blue;
+	padding: 1rem;
+	line-height: 1.8rem;
+	h4 {
+		text-transform: uppercase;
+		color: $blue;
+	}
+	a {
+		text-decoration: none;
+		
+		&:after {
+			content: '';
+			background: url(images/icons/right-chevron-blue.svg) center no-repeat;
+			padding: 0 1rem;
+			background-size: 1rem;
+			background-position: 0.7rem;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.sidebarReviewsInner {
+	flex-wrap: wrap;
+	align-items: center;
+	&:hover{
+		cursor: pointer
+	}
+
+	img {
+		border-radius: 1rem 1rem 0 0;
+		margin-top: 0.5rem;
+	}
+}
+
+.sale__topText {
+	width: 100%;
+	text-transform: uppercase;
+	line-height: 1.8rem;
+	color: #fff;
+	text-align: center;
+	background-color: $green;
+	padding: 1rem;
+	font-family: $main-font;
+}
+
+.cloud__Sale {
+	width: 130px; 
+	height: 70px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	left: -24%;
+	top: -14%;
+}
+
+.sidebarReviewsDesc {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border: 0.1rem dashed $blue;
+	border-radius: 1rem;
+	padding: 1rem;
+	margin: 0.5rem 0;
+
+	h5 {
+		text-transform: uppercase;
+		color: $blue;
+	}
+
+	p {
+		line-height: 1.8rem;
+	}
+
+	&_btn {
+		text-decoration: none;
+		margin-top: 1rem;
+
+		&:after {
+			content: '';
+			background: url(images/icons/right-chevron-blue.svg) center no-repeat;
+			padding: 0 1rem;
+			background-size: 1rem;
+			background-position: 0.7rem;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.sidebarBtns {
+	display: flex;
+	flex-flow: wrap column;
+	margin-bottom: 2rem;
+	&_item {
+		height: 7.5rem;
+		width: 100%;
+		margin: 1rem 0;
+		display: flex;
+		align-items: center;
+		border-radius: 1rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		background: $blue;
+		position: relative;
+
+		&:hover{
+			@include transition(all);
+			background-color: lighten($blue, 12%);
+		}
+
+		a {
+			font-size: 1.5rem;
+			text-decoration: none;
+			position: relative;
+			display: flex;
+			z-index: 66;
+			height: 100%;
+			width: 100%;
+			align-items: center;
+		}
+
+		&:nth-child(1):before{
+			content: '';
+			background: url(images/icons/online-kons.png) center no-repeat;
+			background-size: 4rem;
+			padding: 2rem;
+    		margin: 0 1rem 0 1.5rem;
+		}
+
+		&:nth-child(2):before{
+			content: '';
+			background: url(images/icons/chat-bubbles-with-ellipsis.svg) center no-repeat;
+			background-size: 2.5rem;
+			padding: 2.5rem;
+		}
+
+		&:nth-child(3):before{
+			content: '';
+			background: url(images/icons/film-strip.svg) center no-repeat;
+			background-size: 2.5rem;
+			padding: 2.5rem;
+		}
+
+		&__btn{
+			color: #fff;
+		}
+	}
+}*/

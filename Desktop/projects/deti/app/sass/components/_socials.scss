@@ -1,0 +1,55 @@
+.social {
+		display: flex;
+		display: -ms-flexbox;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		-ms-flex-align: flex-start;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.icon {
+		display: inline-flex;
+		width: 3.2rem;
+		height: 3.2rem;
+		margin: 1rem 1rem 1rem 0;
+	}
+
+	.facebook{
+		fill: #3b5998;
+	}
+
+	.ig {
+		fill: #9b6954;
+	}
+
+	.vkontakte {
+		fill: #4a76a8;
+	}
+
+	.odnoklassniki{
+		fill: #ee8208;
+	}
+
+	a {
+		&.icon {
+			&:hover{
+				transform: translateY(-.1em); 
+				fill: $blue;
+			}
+		}
+	}
+
+	@keyframes smush {
+		50% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 1;
+			filter: contrast(1) brightness(100%) saturate(100%);
+		}
+	}

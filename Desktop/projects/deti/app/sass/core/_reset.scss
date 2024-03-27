@@ -1,0 +1,157 @@
+/* важные мысли в  тексте */
+p.tit5 { color: $blue; z-index: 994; position: relative; }
+
+/* важные мысли в тексте */
+p.tit4 { color: #98B602; z-index: 994; position: relative; }  
+
+/* еще какие то мысли: */
+
+.tit2, .tit4 {
+	font-size: 1.8rem;
+	text-align: center;
+	background-color: #EEFDCB;
+	color: #7D9600;
+	position: relative;
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: $brd-radius;
+
+	&:after {
+		left: 100%;
+	   }
+	   
+	&:before {
+		right: 100%;
+	}
+	   
+	&:after, 
+	&:before {
+		content: "";
+		width: 99999px;
+		height: 100%;
+		background-color: #eefdcb;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+	}
+
+	a {
+		z-index: 994; 
+		position: relative;
+	}
+}
+
+.tit6 {
+	font-size: 1.8rem;
+	text-align: center;
+	background-color: #eefdcb;
+	color: #7d9600;
+	position: relative;
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: 0.4rem;
+}
+
+@media screen and (max-width: 400px){
+	.tit2:after, .tit2:before, .tit4:after, .tit4:before {
+		width: auto;
+	}
+}
+
+.blue-box {
+	font-size: 1.8rem;
+	text-align: center;
+	background-color: #e5f4f9;
+	color: $blue;
+	position: relative;
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: $brd-radius;
+
+	&:after {
+		left: 100%;
+	}
+	   
+	&:before {
+		right: 100%;
+	}
+	   
+	&:after, 
+	&:before {
+		content: "";
+		width: 99999px;
+		height: 100%;
+		background-color: #e5f4f9;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.blue-box:after, .blue-box:before {
+		width: auto;
+	}
+}
+
+p.tit3 {
+	color: $white;
+	background-color: #7D9600;
+	position: relative;
+	padding: 1rem;
+	border-radius: $brd-radius;
+	margin: 1rem 0;
+
+	a {
+		z-index: 994; 
+        position: relative;
+	} 
+}
+
+p.tit7 { 
+	font-size: 1rem;
+}
+
+p.tit1 {
+	background-color: #eee;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+	font-size: 1.6rem;
+}
+
+.texting {
+	h3 {
+		text-transform: uppercase;
+	}
+	
+	h4 {
+		color: $blue;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* для БФ */
+.insurance p {
+	font-size: 16px;
+    line-height: 24px;
+}
+
+.insurance_card__img {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	filter: grayscale(100%);
+	min-height: 170px;
+	&:hover { 
+		filter: grayscale(0%);
+		transition: 0.75s ease-in-out;
+	} 
+}
