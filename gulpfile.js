@@ -19,6 +19,14 @@ function browsersync() {
 
 function scripts() {
 	return src([
+		'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/owl.carousel/dist/owl.carousel.min.js', 
+       // 'node_modules/chart.js/dist/chart.min.js',
+        'node_modules/imask/dist/imask.min.js',
+        'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+        'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
+       // 'node_modules/lazyload/lazyload.min.js',
 		'app/js/app.js'
 		])
 	.pipe(concat('app.min.js'))
@@ -38,7 +46,7 @@ function styles() {
 }
 
 function cssmin(){
-	return src(['app/css/libs.min.css', 'app/css/app.min.css']) // Выбираем файл для минификации
+	return src(['app/css/app.min.css']) // Выбираем файл для минификации
 	.pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } )) // Минифицируем стили
 	.pipe(concat('template_styles.css'))
 	.pipe(dest('dist/css')); // Выгружаем в папку app/css

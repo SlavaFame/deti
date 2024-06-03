@@ -1,0 +1,178 @@
+.trees {
+	background-image: url(images/trees/default_trees.webp);
+	background-size: 100% 100%;
+	position: relative;
+	height: 81vh;
+}
+
+.footerWrap {
+	position: absolute;
+	bottom: 0;
+	background: rgba(212, 235, 223, 0.7);
+}
+
+.footer {
+	&__menu {
+		justify-content: space-between;
+	}
+}
+
+.navBottom {
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	font-weight: 700;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 17.6rem;
+	text-transform: uppercase;
+
+	li {
+		margin-bottom: 1.6rem;
+		padding: 0;
+	}
+
+	a {
+		color: #365d46;
+		text-decoration: none;
+
+		&:hover{
+			color: $blue;
+		}
+	}
+	&__submenu {
+		font-weight: 400;
+		margin-top: 1.6rem;
+	}
+	&-item {
+		max-width: 22rem;
+		a {
+			display: block;
+			width: 100%;
+			margin-bottom: 1.6rem;
+		}
+	}
+}
+
+.sendWrap {
+	p {
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+
+	}
+}
+
+.reviewBtn, .consultationBtn {
+	border-radius: $brd-radius; 
+	border: 0.2rem solid $blue;
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.6rem;
+	max-width: 29.5rem;
+	width: 100%;
+	padding: 1rem;
+
+	&:hover {
+		cursor: pointer;
+		@include transition(all 0.35s ease-in-out);
+	}
+}
+
+.consultationBtn {
+	background-color: $blue;
+	color: $white;
+	margin: 1.6rem 0 0.8rem 0;
+}
+
+.reviewBtn {
+	background-color: $white;
+	color: $blue;
+	margin: 0 0 0.8rem 0;
+}
+
+.warning {
+	color: #879399;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 2.8rem;
+	padding: 2.4rem 0 6rem 0;
+}
+
+.licencies {
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+	padding: 1.6rem 0;
+	border-top: 0.1rem solid $black;
+	border-bottom: 0.1rem solid $black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 4rem;
+
+	b {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		margin-bottom: 0.8rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		font-weight: 400;
+		margin-top: 0.8rem;
+	}
+
+	a { 
+		text-decoration: none;
+	}
+
+	&__text {
+		flex:1;
+	}
+	&__social {
+		flex:0 22rem;
+		p {
+			font-size: 1.4rem;
+			font-weight: 500;
+			line-height: 1.8rem;
+			margin-top: 0;
+		}
+	}
+}
+
+	.navRounds {
+		position: fixed;
+		top: 25%;
+		right: 2%;
+		transform: translateY(50%);
+		z-index: 99;
+
+		a {
+			text-align: center;
+		}
+
+		&-item {
+			background-color: $white;
+			border: 0.2rem solid $blue;
+			color: $blue;
+			border-radius: 100%;
+			width: 3rem;
+			height: 3rem;
+			margin: 1.5rem 0;
+			text-align: center;
+
+			i {
+				margin-top: 0.5rem;
+				font-size: 1.5rem;
+			}
+
+			&:hover {
+				background-color: lighten($blue, 12%);
+				@include transition(all 0.35s ease-in-out);
+				cursor: pointer;
+				color: $white;
+			}
+		}
+	}

@@ -1,0 +1,28 @@
+.header {
+	&_fluid {
+		display: flex;
+		flex-direction: column;
+		z-index: 3;
+		top:0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		background-color: $white;
+
+		&__info{
+			order: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+			max-width: 1140px;
+			margin: 0 auto;
+		}
+		
+		&__menu{
+			order: 1; 
+			z-index: 994;
+			width: 100%;
+		}
+	}
+}

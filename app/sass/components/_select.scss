@@ -1,31 +1,32 @@
 .select {
     &-button {
-        background-color: $grey-2;
         border: 0.2rem solid $blue-1;
         border-radius: 0.4rem;
         width: 100%;
         min-width: 29rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
         padding: 1.6rem;
-        color: $green-1;
+        color: $blue-1;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-transform: inherit;
     }
     &-dropdown {
-        font-size: 2rem;
+        border-radius: 0.4rem;
+        font-size: 1.8rem;
         font-weight: 500;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
         z-index: 1;
         position: absolute;
         list-style: none;
         width: 100%;
         background-color: $white;
-        border: 0.2rem solid $green-1;
-        margin-top: 6.4rem;
+        border: 0.2rem solid $blue-1;
+        margin-top: 0.4rem;
         max-height: 39rem;
         overflow-y: auto;
         transition: 0.5s ease;
@@ -63,7 +64,8 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		padding: 1.6rem;
+		padding: 1.6rem 0;
+        text-decoration: none;
 	}
 	&-number {
 		position: absolute;
@@ -85,18 +87,18 @@
   
 .select-dropdown li:hover,
 .select-dropdown input:checked ~ label {
-	background-color: $grey-2;
-	color: $green-1;
+	background-color: #C7EDF9;
+	color: $blue-1;
   }
 
 .select-dropdown li:hover,
 .select-dropdown input:checked ~ span {
-	color: $green-1;
+	color: $blue-1;
 }
   
 .select-dropdown input:focus ~ label {
-	background-color: $grey-2;
-	color: $green-1;
+	background-color: #C7EDF9;
+	color: $blue-1;
 }
   
 .select-dropdown input[type="radio"] {
@@ -108,16 +110,23 @@
 .custom-select {
 	position: relative;
 	max-width: 33.6rem;
-	color: $green-1;
+	color: $blue-1;
 }
 
 /* interactivity */
-.custom-select.active .arrow {
-	transform: rotate(180deg);
-}
-  
-.custom-select.active .select-dropdown {
-	opacity: 1;
-	visibility: visible;
-	transform: scaleY(1);
+.custom-select.active {
+    .arrow {
+        transform: rotate(180deg);
+    }
+    .select-button {
+        background-color: $white;
+    }
+    .select-dropdown {
+        opacity: 1;
+	    visibility: visible;
+	    transform: scaleY(1);
+    }
+    .selected-value {
+        color: $blue;
+    }
 }

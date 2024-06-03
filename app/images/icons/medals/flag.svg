@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 105" width="90" height="105">
+	<title>flag</title>
+	<defs>
+		<image  width="71" height="95" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABfAgMAAADHWzJ6AAAAAXNSR0IB2cksfwAAAAlQTFRFAKrq5k0m////+qdZSgAAAAN0Uk5T/wAARO7wMwAAAGhJREFUeJztjrsRwCAMxaCgSc8Q2YIRUkRDZstAjp/tBVJYpU7n5xAcx3Gcf5Gs4jIRt1YZijQRdFYjUMcbYiB9ChOJLHa1DeSu1h8j2rI01cyWGQNbNP7I6CyCzk6p2sAjVf3jUIryAnX5OeL5MjpqAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="9" y="8" />
+</svg>

@@ -1,8 +1,266 @@
+/*----- MIXINS FOR BTN --------*/
+@mixin btn_template($btn_template){
+	display: block;
+	width: 26rem;
+	height: 5rem;
+	text-align: right;
+	font-size: 1.5rem;
+    line-height: 1.7rem;
+	position: relative;
+	background-color: $blue;
+	color: $white;
+	text-decoration: none;
+	margin: 2rem 0 1.3rem 0;
+	padding-right: 1rem;
+}
+
+.btn__greenTop, .btn__greenTop-mobile {
+    background: $green;
+    color: $white;
+	border-radius: $brd-radius;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem 2.5rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 4.8rem;
+
+	/*&:after{
+		@include stitch_new(all)
+	}*/
+
+	&:hover{
+		@include transition(all 0.35s ease-in-out);
+		background-color: lighten($green, 3%);
+	}
+}
+
+.btn-w-full {
+	width: calc(100% - 1rem);
+}
+
+.btn_blue {
+	font-size: 1.5rem;
+	font-weight: 700;
+	background-color: $blue;
+	color: $white;
+    border-radius: $brd-radius;
+    padding: 1rem 3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover{
+		background-color: lighten($blue, 12%);
+		@include transition(all 0.35s ease-in-out);
+	}
+
+	/*&:before {
+		@include stitch_new(all);
+	}*/
+}
+
+.btn_green {
+    background-color: $green;
+    color: $white;
+    border-radius: $brd-radius;
+	position: relative;
+	padding: 1rem 3rem;
+	border: none;
+	font-size: 1.5rem;
+    font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	&:hover{
+		background-color: lighten($green, 3%);
+		@include transition(all 0.35s ease-in-out);
+	}
+
+	/*&:after{
+		@include stitch_new(all);
+	}*/
+}
+
+.btn_white {
+    color: $blue;
+	background-color: $white;
+	border: 0.2rem solid $blue;
+    border-radius: $brd-radius;
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 1.6rem;
+	letter-spacing: 0.015em;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:hover{
+		background-color: $blue;
+		color: $white;
+		@include transition(all 0.35s ease-in-out);
+	}
+}
+
+.skype_btn {
+	color: $white;
+    background: $blue;
+	border-radius: $brd-radius;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+    z-index: 66;
+	font-size: 1.5rem;
+    font-weight: 700;
+	padding: 0.5rem 1rem 0.5rem 0rem;
+
+	&:before{
+		content: "";
+		background: url(images/icons/skype-logo.svg) 50% no-repeat;
+		background-size: 1.5rem;
+		padding: 0 3rem 3rem 1rem;;
+	}
+	/*&:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0.5rem;
+		bottom: 0.5rem;
+		right: 0.5rem;
+		left: 0.5rem;
+		border: 0.2rem dashed $white;
+		border-radius: $brd-radius;
+	}*/
+
+	&:hover{
+		background-color: lighten($blue, 12%);
+		@include transition(all 0.35s ease-in-out);
+	}
+}
+
+.aboutArticles {
+    color: $white;
+    background-color: $blue;
+    width: 11.7rem;
+    height: 2.7rem;
+    margin: 1rem 0;
+    border-radius: $brd-radius;
+
+    &:hover {
+        background-color: lighten($blue, 12%);
+        @include transition(all 0.35s ease-in-out);
+    }
+}
+
+/*----------- ИНОГОРОДНИМ ----------------*/
 .btn {
-    &__green {
-        background-color: $green-1;
-    }
-    &__blue {
-        background-color: $blue-1;
-    }
+		@include btn_template(all);
+		border-radius: $brd-radius;
+		span {
+			display: flex;
+			width: 70%;
+			font-size: 1.5rem;
+            line-height: 1.7rem;
+			text-align: center;
+			margin-left: auto;
+		}
+
+		&:hover{
+			cursor: pointer;
+		}
+		&_video {
+			/*&:before {
+				@include stitch(all);	
+			}*/
+			&:after {
+				content: '';
+				position: absolute;
+				background: url(images/icons/video.png) center / contain no-repeat;
+				width: 10rem;
+				height: 8rem;
+				left: 0;
+				bottom: -0.9rem;
+			}
+		}
+		&_question {
+			/*&:before {
+				@include stitch(all);
+			}*/
+			&:after {
+				content: '';
+				position: absolute;
+				background: url(images/icons/question.png) center / contain no-repeat;
+				width: 10rem;
+				height: 8rem;
+				left: 0;
+				bottom: -0.9rem;
+			}
+		}
+		&_price {
+			/*&:before {
+				@include stitch(all);
+			}*/
+			&:after {
+				content: '';
+				position: absolute;
+				background: url(images/icons/price.png) center / contain no-repeat;
+				width: 10rem;
+				height: 8rem;
+				left: 0;
+				bottom: -0.9rem;
+			}
+		}
+		&_readReview {
+			/*&:before {
+				@include stitch(all);
+			}*/
+			&:after {
+				content: '';
+				position: absolute;
+				background: url(images/icons/read_review.png) center / contain no-repeat;
+				width: 11rem;
+				height: 7rem;
+				left: 0;
+				bottom: 0;
+			}
+		}
+		&_recommend {
+			/*&:before {
+				@include stitch(all);
+			}*/
+			&:after {
+				content: '';
+				position: absolute;
+				background: url(images/icons/recommend.png) center / contain no-repeat;
+				width: 11rem;
+				height: 7rem;
+				left: 0;
+				bottom: 0;
+			}
+		}
+}
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	button {
+		padding: 0.8rem 0;
+		color: $white;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+			content:'';
+			border-radius: 0.8rem;
+			border: 0.2rem dashed $white;
+			position: absolute;
+			inset: 0.5rem;
+		}
+	}
+}
+   
+button.nores_btn {
+   padding: 1rem!important;
 }

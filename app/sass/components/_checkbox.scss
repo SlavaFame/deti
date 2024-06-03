@@ -1,0 +1,71 @@
+.option {
+	height: 2rem;
+	position: relative;
+
+	p {
+		margin: 0 0 1.2rem 1.2rem;
+	}
+	
+	&_tooltip {
+		position: absolute;
+		padding: 1rem;
+		top: 1rem;
+		right: 0;
+		background-color: rgba(0,0,0,0.65);
+		width: 80%;
+		color: #fff;
+		border-radius: 1rem;
+		display: none;
+		z-index: 1;
+
+		&:before{
+			position: absolute;
+			top: 0;
+			right: 1rem;
+			width: 1rem;
+			height: 1rem;
+			background-color: #fff;
+		}
+	}
+}
+
+.checkbox__outer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	input[type='checkbox']{
+		width: auto;
+		cursor: pointer;
+		border: none;
+	}
+
+	label {
+		margin-left: 1rem;
+		cursor: pointer;
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+		height: 100%;
+	}
+}
+
+.check {
+	padding-left: 2rem;
+	&__input {
+		appearance:none;
+		position: absolute;
+		&:checked + .check__box {
+			background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='28' height='28' fill='white' stroke='%2300AAEA' stroke-width='2'/%3E%3Cg clip-path='url(%23clip0_137_486)'%3E%3Cpath d='M23.9131 7.17099C23.5776 6.83428 23.0275 6.83428 22.692 7.17099L12.5351 17.3255L7.30426 12.0589C6.96877 11.721 6.42238 11.721 6.08443 12.0589L4.25161 13.8905C3.91613 14.2248 3.91613 14.7749 4.25161 15.1116L11.9196 22.8301C12.2551 23.1644 12.8015 23.1644 13.1407 22.8301L25.7447 10.2249C26.0851 9.88815 26.0851 9.33683 25.7447 8.99888L23.9131 7.17099Z' fill='%23FE5369'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_137_486'%3E%3Crect width='22' height='22' fill='white' transform='translate(4 4)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+		}
+	}
+
+	&__box {
+		margin-left: -3.2rem;
+		position: absolute;
+		width: 2rem;
+		height: 2rem;
+		cursor:pointer;
+		background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='28' height='28' fill='white' stroke='%2300AAEA' stroke-width='2'/%3E%3C/svg%3E%0A");
+	}
+}

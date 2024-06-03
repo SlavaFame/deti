@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Медицинский центр "Дети Индиго - НИИ Неврологии и Педиатрии"</title>
+		<meta name="description" content="Лечение детского аутизма и ДЦП в Челябинске. Медицинский центр 'Дети Индиго' на Набережной">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="../images/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	
+		<link rel="stylesheet" href="../css/app.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link href='https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap' rel='stylesheet' type='text/css'>
+	</head>
+	
+
+<body>
+	<!-- МОДАЛЬНЫЕ ОКНА НАЧАЛО -->
+	<div class="overlay overlay-campaign">
+		<div class="popup popup-campaign">
+			<form id="form" class="popup-form">
+				<h1>Записаться на прием</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+						<p class="mt-3 mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Введите номер телефона</p>
+						<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="" id="">
+						<p class="hint">не забудьте указать код города (для городских номеров)</p>
+						<p class="mb-2">Выберите удобную дату</p>
+						<div class="d-flex">
+							<input type="date" placeholder="15 Июня" name="" id="" class="mr-2" required="">
+							<input type="time" required="">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-campaign"></div>
+		</div>
+	</div> 
+
+	<div class="overlay overlay-question">
+		<div class="popup popup-question">
+			<form id="form" class="">
+				<h1>Задать вопрос</h1>
+				<p class="m-2">Напишите ваше имя</p>
+				<input type="text" placeholder="Ваше имя" required>
+				<p class="m-2">Введите номер телефона</p>
+				<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="">
+				<p class="m-2">Или адрес электронной почты</p>
+				<input type="еmail" placeholder="ivanov@mail.ru">
+				<p class="m-2">Ваш вопрос</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<button type="submit" class="btn-blue">Отправить</button>	
+			</form>
+			<div class="close-popup close-question"></div> 
+		</div>
+	</div>
+
+	<div class="overlay overlay-suggestion">
+		<div class="popup popup-suggestion">
+			<form id="form" class="">
+				<h1>Жалобы и предложения</h1>
+				<p class="m-2">Напишите ваше имя</p>
+				<input type="text" placeholder="Ваше имя" required>
+				<p class="m-2">Введите номер телефона</p>
+				<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="">
+				<p class="m-2">Или адрес электронной почты</p>
+				<input type="еmail" placeholder="ivanov@mail.ru">
+				<p class="m-2">Текст вашего сообщения</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<button type="submit" class="btn-blue">Отправить</button>	
+			</form>
+			<div class="close-popup close-suggestion"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-consultation">
+		<div class="popup popup-consultation">
+			<form id="form">
+				<h1>Записаться на онлайн-консультацию</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+						<p class="mt-3 mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Введите номер телефона</p>
+						<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="" id="">
+						<p class="hint">не забудьте указать код города (для городских номеров)</p>
+						<p class="mb-2">Выберите удобную дату</p>
+						<div class="d-flex">
+							<input type="date" placeholder="15 Июня" name="" id="" class="mr-2" required="">
+							<input type="time" required="">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-consultation"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-repost">
+		<div class="popup popup-repost">
+			<h1>Поделиться в соцсетях</h1>
+			<div class="row">
+				<div class="repost">
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Instagram"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в VK"><i class="fab fa-vk"></i></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Одноклассниках"><i class="fab fa-odnoklassniki"></i></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Facebook"><i class="fab fa-facebook-f"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="close-popup close-repost"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-call">
+		<div class="popup popup-call">
+			<form id="form" class="">
+				<h1>Заказать обратный звонок</h1>
+				<p class="m-2">Напишите ваше имя</p>
+				<input type="text" placeholder="Ваше имя" required>
+				<p class="m-2">Введите номер телефона</p>
+				<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required>
+				<button type="submit" class="btn-blue">Отправить</button>	
+			</form>
+			<div class="close-popup close-call"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-review">
+		<div class="popup popup-review">
+			<form id="form" class="">
+				<h1>Оставить отзыв</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Ваши впечатления о нас</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-review"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-skype">
+		<div class="popup popup-skype">
+			<form id="form" class="">
+				<h1>Записаться на консультацию по Skype</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-skype"></div>
+		</div>
+	</div>
+	
+	<!-- HEADER НАЧАЛО -->
+	<header class="header_fluid" id="top">
+			<div class="header_fluid__info">
+				<div class="logo">
+					<a href="/">
+						<img class="lazy" data-src="/images/logos/logo_top_new.png" src="/images/logos/logo_top_new.png" alt="">
+					</a>	
+				</div>
+
+				<div class="infoTop">
+					<div class="addressTop" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+						<div class="citySelect">
+							<p itemprop="addressLocality">Челябинск</p>
+					<!-- <div class="citySelect_popup">
+						<div class="citySelect_popup-question">
+							<p>Ваш город</p> 
+							<span class="citySelect_popup-btns--link"><a href="#">Челябинск</a>?</span>
+						</div>
+						<div class="citySelect_popup-btns">
+							<button>Да</button>
+							<a href="#">Выбрать другой</a>
+						</div>
+					</div>-->
+				</div> 
+				<div class="street">
+					<p itemprop="streetAddress">Университетская набережная, 34</p>
+				</div>
+			</div>
+			<div class="time">
+				<div class="timeWork">
+					<span>
+						<p>Пн-Пт: 8:00-20:00</p>
+						<p>Сб-Вс: 9:00-18:00</p>
+					</span>
+				</div>
+				<div class="transportSchema pb-2">
+					<!-- <p style="color:#ec0000; line-height: 1; margin-top: 5px">Мы продолжаем прием пациентов!</p> -->
+					<a href="https://deti-indigo74.ru/about/contacts/" target="_blank">Схема проезда</a>
+					<a href="https://deti-indigo74.ru/inogorodnim/rus/" target="_blank">Иногородним</a>
+				</div>
+			</div>
+			</div>
+			<div class="phone row">
+			<button class="btn__greenTop button-campaign">Записаться на приём</button>
+			<span class="phoneList static_phone">
+				<a href="tel:83517345563" class="phoneListWrap tel_wrap" itemprop="telephone">
+					8(351)<span class="hide_tel">показать телефон</span><span class="show_tel">734-55-63</span></a>
+			</span>
+			</div>
+			</div>
+			<div class="header_fluid__menu">
+			<nav class="navOuter">
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="burger_top">
+					<a href="/"><img class="lazy" data-src="images/logos/indigo_mob.png" alt="Лого"></a>
+					<button class="btn__greenTop-mobile button-campaign">Записаться</button>
+				</div>
+				<ul class="navMenu">
+					<li class="navMenu_item"><a class="navMenu_item__link" href="about.html">О центре</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="chto-lechim.html">Что лечим</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="methods.html">Методики</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="news.html">Новости</a></li>
+					<li class="navMenu_item">
+						<a href="specialists.html" class="navMenu_item__link chevron">Специалисты</a>
+						<ul class="navMenu_sub">
+							<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Новости</a></li>
+						</ul>
+					</li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="sales.html">Aкции</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="reviews1.html">Отзывы</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="price.html">Цены</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="faq.html">Вопрос-ответ</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="articles.html">Статьи</a></li>
+				</ul>
+			</nav>
+			</div>
+	</header>
+
+	<div class="container">
+		<ul class="breadcrumb">
+			<li class="breadcrumbItem"><a href="#">Главная</a></li>
+			<li class="breadcrumbItem active">Статьи</li>
+		</ul>
+	</div>
+
+	<div class="articles container">
+		<h1>Статьи</h1>
+		<div class="row">
+			<div class="articles__sidebar col-lg-4">
+				<input type="text" placeholder="Поиск по ключевым словам" class="search">
+				
+				<button class="articles__filter-apply openModal">Применить фильтр</button>
+				
+				<div class="articles__filter modal">
+					<div class="articles__filter-close">
+						Применить фильтр
+						<span class="articles__filter-closeBtn modal-close"></span>
+					</div>
+					<div class="articles__filterHeader">
+						<p>Фильтр по диагнозу</p>
+						<button class="articles__filterClear">Очистить</button>
+					</div>
+					<div class="articles__filterCategory">
+						<b>Заболевания опорно-двигательного аппарата</b>
+						<a href="#" class="articles__filterCategory-item">Дисплазия суставов</a>
+						<a href="#" class="articles__filterCategory-item">Косолапость</a>
+						<a href="#" class="articles__filterCategory-item">Кривошея</a>
+						<a href="#" class="articles__filterCategory-item">Плоскостопие</a>
+						<a href="#" class="articles__filterCategory-item">Кривошея</a>
+						<a href="#" class="articles__filterCategory-item">Сколиоз у детей</a>
+						<a href="#" class="articles__filterCategory-item">Спастическая диплегия</a>
+					</div>
+					<div class="articles__filterCategory">
+						<b>Неврологические заболевания</b>
+						
+						<a href="#" class="articles__filterCategory-item">Астено-невротический синдром</a>
+						<a href="#" class="articles__filterCategory-item">Агрессивность</a>
+						<a href="#" class="articles__filterCategory-item">Алалия</a>
+						<a href="#" class="articles__filterCategory-item">Атаксический церебральный паралич</a>
+						<a href="#" class="articles__filterCategory-item">Атонико-астатическая форма ДЦП</a>
+						<a href="#" class="articles__filterCategory-item active">Аутизм у детей</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Аффективно-респираторный синдром</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Гемипарез</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Гиперактивность</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Гиперкинетическая форма ДЦП</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Гипертензионно-гидроцефальный синдром</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Двойная диплегия</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Депрессия у детей</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Детские неврологические заболевания</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Детский церебральный паралич</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Дизартрия у детей</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Дисфункция сенсорной интеграции</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">ДЦП. Двойная гемипаретическая форма</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">ДЦП. Легкая степень</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Задержка моторного развития</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Задержка психического развития (ЗПР)</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Задержка психо-моторного развития</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Задержка развития на фоне ФКУ и синдрома Дауна</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Заикание</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Метеозависимость у детей</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Минимальная церебральная дисфункция</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Нарушение вестибулярной чувствительности</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Натальная травма шейного отдела</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Нейросенсорная тугоухость</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Олигофрения</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Перинатальная энцефалопатия</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Ранняя диагностика аутизма</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Синдром Аспергера</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Синдром Дауна</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Слабая мелкая моторика</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Умственная отсталость</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Синдром Аспергера</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Энурез</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Эпилепсия</a>
+						<a href="#" class="articles__filterCategory-item" style="display: none;">Эпилептический приступ у ребёнка</a>
+
+						<button class="articles__filterShowMore">Показать больше</button>
+					</div>
+				</div>
+				<div class="articles__filter-modalWrap modal-overlay"></div>
+
+			</div>
+			<div class="articles__content col-lg-8">
+				
+				<div class="articles__error">
+					<div class="articles__errorHeader">К сожалению, по вашему запросу ничего не найдено</div>
+					<p>Попробуйте изменить критерии поиска</p>
+					<img src="images/search-error.svg" alt="">					
+				</div>
+
+				<div class="articles__keyword">
+					Аутизм у детей
+					<div class="articles__keyword-close">
+						<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.881774 8L0 7.11823L3.12859 3.98964L0 0.881774L0.881774 0L4.01036 3.12859L7.11823 0L8 0.881774L4.87141 3.98964L8 7.11823L7.11823 8L4.01036 4.87141L0.881774 8Z" fill="white"/>
+						</svg>
+					</div>	
+				</div>
+
+				
+				<div class="articles__inner">
+					<a href="#" class="articles__inner-item">
+						<div class="articles__inner-photo"></div>
+						<div class="articles__inner-content">
+							<h2>Аутизм - не приговор</h2>
+							<p>Не стоит впадать в шоковое состояние, услышав диагноз «аутизм». В НИИ «Дети Индиго» смогут помочь!</p>
+							<div class="articles__inner-link">Читать</div>
+						</div>
+					</a>
+					<a href="#" class="articles__inner-item">
+						<div class="articles__inner-photo"></div>
+						<div class="articles__inner-content">
+							<h2>У ДЕТЕЙ С АУТИЗМОМ ЕСТЬ ШАНС НА СЧАСТЛИВОЕ БУДУЩЕЕ!</h2>
+							<p>Врачи НИИ «Дети Индиго» считают своим долгом помочь каждому аутичному ребёнку стать полноценным членом общества.</p>
+							<div class="articles__inner-link" href="#">Читать</div>
+						</div>
+					</a>
+					<a href="#" class="articles__inner-item">
+						<div class="articles__inner-photo"></div>
+						<div class="articles__inner-content">
+							<h2>КОГДА МАЛЫШ ДОЛЖЕН НАЧАТЬ ГОВОРИТЬ?</h2>
+							<p>Развитие каждого ребёнка индивидуально. Тем не менее педиатры выделяют нормы речевого развития применительно к каждому возрасту.</p>
+							<div class="articles__inner-link" href="#">Читать</div>
+						</div>
+					</a>
+					<a href="#" class="articles__inner-item">
+						<div class="articles__inner-photo"></div>
+						<div class="articles__inner-content">
+							<h2>СКОЛЬКО СТОИТ КУРС ЛЕЧЕНИЯ АУТИЗМА?</h2>
+							<p>Сказать точную стоимость лечения наперед крайне сложно, но кое-что предложить мы все-таки можем!</p>
+							<div class="articles__inner-link">Читать</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fastMenu container">
+		<div class="fastMenu__inner">
+			<a href="#" class="fastMenu-item">
+				<div class="fastMenu__pic">
+					<div class="fastMenu__pic__inner">
+						<img src="images/nav/1.svg" alt="">
+					</div>
+				</div>
+				Заказать <br> звонок
+			</a>
+			<a href="#" class="fastMenu-item">
+				<div class="fastMenu__pic">
+					<div class="fastMenu__pic__inner">
+						<img src="images/nav/2.svg" alt="">
+					</div>
+				</div>
+				Задать вопрос специалисту
+			</a>
+			<a href="https://deti-indigo74.ru/review/o-zabolevanii/" class="fastMenu-item">
+				<div class="fastMenu__pic">
+					<div class="fastMenu__pic__inner">
+						<img src="images/nav/3.svg" alt="">
+					</div>
+				</div>
+				Отзывы <br> пациентов
+			</a>
+			<a href="https://deti-indigo74.ru/spravochnik-spetsialnostey/" class="fastMenu-item">
+				<div class="fastMenu__pic">
+					<div class="fastMenu__pic__inner">
+						<img src="images/nav/4.svg" alt="">
+					</div>
+				</div>
+				Выбрать специалиста
+			</a>
+			<a href="#" class="fastMenu-item">
+				<div class="fastMenu__pic">
+					<div class="fastMenu__pic__inner">
+						<img src="images/nav/5.svg" alt="">
+					</div>
+				</div>
+				Смотреть вакансии
+			</a>
+			<a href="#" class="fastMenu-item">
+				<div class="fastMenu__pic">
+					<div class="fastMenu__pic__inner">
+						<img src="images/nav/6.svg" alt="">
+					</div>
+				</div>
+				Записаться на прием
+			</a>
+		</div>
+</div>
+
+<div class="trees">
+	<footer class="footerWrap container-fluid">
+		<div class="container">
+			<div class="footer__menu row">
+				<div class="col-lg-4">
+					<div class="sendWrap">
+						<p>Запишитесь на онлайн-консультацию <br> или оставьте свой отзыв.</p>
+						<button class="consultationBtn">Записаться</button>
+						<button class="reviewBtn">Оставить отзыв</button>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<ul class="navBottom row">
+					<li class="navBottom-item col-lg-4">
+						<a href="#">О центре</a>
+						<ul class="navBottom__submenu">
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Контролирующие организации</a></li>
+							<li><a href="#">Лицензии</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Страховые компании</a></li>
+						</ul>
+					</li>
+					<li class="navBottom-item col-lg-4">
+						<a href="#">Что лечим</a>
+						<a href="#">Методики</a>
+						<a href="#">Специалисты</a>
+						<a href="#">Новости</a>
+						<a href="#">Акции</a>
+						<a href="#">Отзывы</a>
+					</li>
+					<li class="navBottom-item col-lg-4">
+						<a href="#">Цены</a>
+						<a href="#">Вопрос-ответ</a>
+						<a href="#">Видео</a>
+						<a href="#">Благотворительные фонды</a>
+						<a href="#">Справочник специальностей</a>
+						<a href="#">Как проехать</a>
+					</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="licencies">
+				<div class="licencies__text">
+					<b>ООО "НИИ Педиатрии и Неврологии "Дети Индиго"</b>
+					<p>&copy;. Все права защищены, 2021 Все статьи и материалы сайта deti-indigo74.ru защищены авторским правом и принадлежат компании ООО "НИИ Педиатрии и Неврологии "Дети Индиго". Любое копирование и перепечатка публикаций, а также их частей строго запрещены и преследуются в соответствии с законом. При нарушении авторских и смежных прав будет открыто судебное преследование и отправлены уведомления хостинг- провайдерам для блокировки интернет-ресурсов. Cодержание сайта не является публичной офертой</p>	
+				</div>
+				<div class="licencies__social">
+					<b>Мы в социальных сетях</b>
+					<div class="social">
+						<a href="https://vk.com/detiindigo74" class="icon vkontakte" target="_blank" title="Подписывайтесь на нас во ВК">
+							<svg viewBox="0 0 112.196 112.196">
+								<g>
+									<circle id="XMLID_11_" cx="56.098" cy="56.098" r="56.098"/>
+								</g>
+								<path d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+									c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+									c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+									c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+									c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+									c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+									c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+									c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+									c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+									c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+									C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" style="fill:#fff;"/>
+							</svg>
+						</a>
+						<a href="https://ok.ru/niidetiindigo" class="icon odnoklassniki" target="_blank" title="Подписывайтесь на нас в Одноклассниках">
+							<svg viewBox="0 0 97.75 97.75">
+								<path d="M48.921,40.507c4.667-0.017,8.384-3.766,8.367-8.443c-0.017-4.679-3.742-8.402-8.411-8.406    c-4.708-0.005-8.468,3.787-8.432,8.508C40.48,36.826,44.239,40.524,48.921,40.507z"/>
+								<path d="M48.875,0C21.882,0,0,21.883,0,48.875S21.882,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.868,0,48.875,0z     M48.945,14.863c9.52,0.026,17.161,7.813,17.112,17.438c-0.048,9.403-7.814,17.024-17.318,16.992    c-9.407-0.032-17.122-7.831-17.066-17.253C31.726,22.515,39.445,14.837,48.945,14.863z M68.227,56.057    c-2.105,2.161-4.639,3.725-7.453,4.816c-2.66,1.031-5.575,1.55-8.461,1.896c0.437,0.474,0.642,0.707,0.914,0.979    c3.916,3.937,7.851,7.854,11.754,11.802c1.33,1.346,1.607,3.014,0.875,4.577c-0.799,1.71-2.592,2.834-4.351,2.713    c-1.114-0.077-1.983-0.63-2.754-1.407c-2.956-2.974-5.968-5.895-8.862-8.925c-0.845-0.882-1.249-0.714-1.994,0.052    c-2.973,3.062-5.995,6.075-9.034,9.072c-1.365,1.346-2.989,1.59-4.573,0.82c-1.683-0.814-2.753-2.533-2.671-4.262    c0.058-1.166,0.632-2.06,1.434-2.858c3.877-3.869,7.742-7.75,11.608-11.628c0.257-0.257,0.495-0.53,0.868-0.93    c-5.273-0.551-10.028-1.849-14.099-5.032c-0.506-0.396-1.027-0.778-1.487-1.222c-1.783-1.711-1.962-3.672-0.553-5.69    c1.207-1.728,3.231-2.19,5.336-1.197c0.408,0.191,0.796,0.433,1.168,0.689c7.586,5.213,18.008,5.356,25.624,0.233    c0.754-0.576,1.561-1.05,2.496-1.289c1.816-0.468,3.512,0.201,4.486,1.791C69.613,52.874,69.6,54.646,68.227,56.057z"  />
+							</svg>
+						</a>							
+					</div>
+				</div>
+			</div>
+			
+			<div class="warning">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМО ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</div>
+		</div>
+	</footer>
+</div>
+
+<div class="navRounds">
+	<div class="navRounds-item" id="click">
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</div>
+	<a href="#" class="button-repost" title="Поделиться" rel="noopener" aria-label="Repost">
+		<div class="navRounds-item"><i class="fa fa-share-square lazy" aria-hidden="true" data-was-processed="true"></i></div>
+	</a>
+	<a href="https://deti-indigo74.ru/search/" title="Поиск" rel="noopener" aria-label="Search">
+		<div class="navRounds-item"><i class="fa fa-search lazy" aria-hidden="true" data-was-processed="true"></i></div>
+	</a>
+	<a href="#" class="button-call" title="Заказать обратный звонок" rel="noopener" aria-label="Call">
+		<div class="navRounds-item"><i class="fa fa-phone-alt lazy" aria-hidden="true" data-was-processed="true"></i></div>
+	</a>
+	<a href="#" class="button-question" title="Задать вопрос" rel="noopener" aria-label="Questions">
+		<div class="navRounds-item"><i class="fa fa-question lazy" aria-hidden="true" data-was-processed="true"></i></div>
+	</a>
+	<a href="http://deti-indigo74.ru/about/contacts/" title="Контакты" rel="noopener" aria-label="Contacts">
+		<div class="navRounds-item"><i class="fa fa-map-marker-alt lazy" aria-hidden="true" data-was-processed="true"></i></div>
+	</a>
+</div>
+</body>
+
+<script src="../js/libs.min.js"></script>
+<script src="../js/app.min.js"></script>
+<script src="https://kit.fontawesome.com/1765a704fd.js" async defer></script>
+</html>

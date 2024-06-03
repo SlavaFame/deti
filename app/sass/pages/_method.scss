@@ -1,0 +1,145 @@
+.method,
+.direction {
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	text-align: left;
+	img {
+		max-width: 100%;
+	}
+	&__block {
+		color: $white;
+		margin: 2rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+	&__btn {
+		border: 0.2rem solid $white;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		height: 5.2rem;
+		margin-left: auto;
+		padding: 0 2rem;
+	}
+	&__slider {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		max-width: 54rem;
+
+		&-item {
+			cursor: pointer;
+			flex: 0 0 10.5rem;
+		}
+
+		&__photo {
+			width: 54rem;
+			height: 40rem;
+			position: relative;
+			border-radius: $brd-radius;
+
+			.slick-track {
+				display: flex;
+				height: 100%;
+			}
+
+			.slick-list, 
+			.slick-slide {
+				margin: 0;
+			}
+
+			img {    
+				border-radius: $brd-radius;
+				height: 100%;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+
+		&__nav {
+			display: flex;
+			gap: 4rem;
+
+			.slick-track {
+				margin: 2rem 0;
+			}
+
+			.slick-current {
+				outline: 0.2rem solid $blue;
+			}
+
+			&-item {
+				height: 5rem;
+				width: 8rem;
+				cursor: pointer;
+				border-radius: $brd-radius;
+
+				img {
+					border-radius: .4rem;
+					height: 100%;
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+		}
+	}
+	&__text {
+		border-radius: $brd-radius;
+		background-color: $blue;
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+		font-weight: 400;
+		padding: 3.2rem 2rem 2rem 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex: 1;
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+	&__not__active {
+		cursor: auto;
+		filter: grayscale(1);
+	}
+	&_location {
+		background-color: $green;
+		padding: 1.8rem;
+		align-items: center;
+		margin-bottom: 1rem;
+		&__inner {
+			align-items: center;
+			color: $white;
+			font-weight: 400;
+			text-transform: uppercase;
+			&-info {
+				font-size: 1.5rem;
+				line-height: 1.7rem;
+			}
+			&-cities {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				gap: 1rem;
+				&--item {
+					background-color: $white;
+					border-radius: $brd-radius;
+					color: $green;
+					font-size: 1.5rem;
+					line-height: 1.7rem;
+					margin-top: 1rem;
+					padding: 0.5rem 1rem;
+					
+					&:before {
+						content: '';
+						background: url(images/icons/pin.svg) center / contain no-repeat;
+						margin: 0.5rem 0.5rem 0 0;
+						padding: 0.75rem 0 0.75rem 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}

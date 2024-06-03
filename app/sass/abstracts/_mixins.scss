@@ -1,0 +1,54 @@
+@mixin btn_template($btn_template){
+	background-color: $blue;
+	color: $white;
+	font-size: 1.5rem;
+    line-height: 1.7rem;
+	display: block;
+	width: 26rem;
+	height: 5rem;
+	margin: 2rem 0 1.3rem 0;
+	padding-right: 1rem;
+	position: relative;
+	text-align: right;
+	text-decoration: none;
+}
+
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+/*
+@mixin stitch_new($stitch){
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0.5rem;
+	right: 1.5rem;
+	left: 1.5rem;
+	bottom: 0.5rem;
+	border: 0.2rem dashed $white;
+	border-radius: 1rem;
+}
+ 
+@mixin stitch($stitch){
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	left: 0.5rem;
+	bottom: 0.5rem;
+	border: 0.2rem dashed $white;
+	border-radius: 1rem;
+}*/
+
+@mixin sidebar_icons($sidebar_icons){
+	font-family: "Font Awesome 5 Pro";
+	font-weight: bold;
+	&:hover {
+		color: $white;
+	}
+}
