@@ -7,14 +7,17 @@ p.tit4 { color: #98B602; z-index: 994; position: relative; }
 /* еще какие то мысли: */
 
 .tit2, .tit4 {
+	border-left: 0.8rem solid #99B800;
 	background-color: #EEFDCB;
 	border-radius: $brd-radius;
 	font-size: 1.8rem;
 	line-height: 2.4rem; 
 	margin: 3.2rem 0;
-	padding: 2.4rem;
+	padding: 2rem 2rem 2rem 3.6rem;
 	position: relative;
 }
+
+
 
 .tit6 {
 	background-color: #eefdcb;

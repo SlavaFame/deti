@@ -170,9 +170,44 @@
 
 			&:hover {
 				background-color: lighten($blue, 12%);
-				@include transition(all 0.35s ease-in-out);
 				cursor: pointer;
 				color: $white;
+				@include transition(all 0.35s ease-in-out);
 			}
+
+			&.online {
+				background-image: url("data:image/svg+xml,%3Csvg width='18' height='20' viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 4C6.243 4 4 6.243 4 9C4 11.757 6.243 14 9 14C11.757 14 14 11.757 14 9C14 6.243 11.757 4 9 4ZM7.5 9C7.30295 8.99993 7.10785 8.96106 6.92582 8.88559C6.7438 8.81012 6.57842 8.69954 6.43913 8.56016C6.15783 8.27867 5.99987 7.89696 6 7.499C6.00007 7.30195 6.03894 7.10685 6.11441 6.92482C6.18988 6.7428 6.30046 6.57742 6.43984 6.43813C6.72133 6.15683 7.10304 5.99887 7.501 5.999C7.89896 5.99913 8.28056 6.15735 8.56187 6.43884C8.84317 6.72033 9.00113 7.10204 9.001 7.5C9.00087 7.89796 8.84265 8.27956 8.56116 8.56087C8.27967 8.84217 7.89796 9.00013 7.5 9Z' fill='%2300AAEA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 9C0 4.037 4.037 0 9 0C13.963 0 18 4.037 18 9C18 12.328 16.18 15.232 13.488 16.79H13.4058C15.228 17.5069 16.5544 18.6555 17 20H1C1.44559 18.6555 2.77199 17.5069 4.59423 16.79H4.513C1.82 15.232 0 12.328 0 9ZM9 16C12.859 16 16 12.859 16 9C16 5.141 12.859 2 9 2C5.141 2 2 5.141 2 9C2 12.859 5.141 16 9 16Z' fill='%2300AAEA'/%3E%3C/svg%3E%0A");
+				background-position: center;
+				background-size: 1.5rem;
+				background-repeat: no-repeat;
+				background-color: $white;
+				position: relative;
+				&:hover {
+					background-image: url("data:image/svg+xml,%3Csvg width='18' height='20' viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 4C6.243 4 4 6.243 4 9C4 11.757 6.243 14 9 14C11.757 14 14 11.757 14 9C14 6.243 11.757 4 9 4ZM7.5 9C7.30295 8.99993 7.10785 8.96106 6.92582 8.88559C6.7438 8.81012 6.57842 8.69954 6.43913 8.56016C6.15783 8.27867 5.99987 7.89696 6 7.499C6.00007 7.30195 6.03894 7.10685 6.11441 6.92482C6.18988 6.7428 6.30046 6.57742 6.43984 6.43813C6.72133 6.15683 7.10304 5.99887 7.501 5.999C7.89896 5.99913 8.28056 6.15735 8.56187 6.43884C8.84317 6.72033 9.00113 7.10204 9.001 7.5C9.00087 7.89796 8.84265 8.27956 8.56116 8.56087C8.27967 8.84217 7.89796 9.00013 7.5 9Z' fill='%23FFF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 9C0 4.037 4.037 0 9 0C13.963 0 18 4.037 18 9C18 12.328 16.18 15.232 13.488 16.79H13.4058C15.228 17.5069 16.5544 18.6555 17 20H1C1.44559 18.6555 2.77199 17.5069 4.59423 16.79H4.513C1.82 15.232 0 12.328 0 9ZM9 16C12.859 16 16 12.859 16 9C16 5.141 12.859 2 9 2C5.141 2 2 5.141 2 9C2 12.859 5.141 16 9 16Z' fill='%23FFF'/%3E%3C/svg%3E%0A");
+					background-position: center;
+					background-size: 1.5rem;
+					background-repeat: no-repeat;
+					background-color: $blue;
+					cursor: pointer;
+					@include transition(all 0.35s ease-in-out);
+					.navRounds-tooltip {
+						display: block;
+						@include transition(all 0.35s ease-in-out);
+					}
+				}
+			}
+		}
+		&-tooltip {
+			background-color: $blue;
+			border-radius: $brd-radius;
+			color: $white;
+			display: none;
+			font-size: 1.6rem;
+			height: auto;
+			width: 22rem;
+			padding: 0;
+			position: absolute;
+			top: -0.3rem;
+			right: 3rem;
 		}
 	}
