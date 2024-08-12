@@ -1,8 +1,9 @@
 .trees {
-	background-image: url(images/trees/default_trees.webp);
-	background-size: 100% 100%;
-	position: relative;
-	height: 81vh;
+	background: url(images/trees/default.png); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 81rem;
+    position: relative;
 }
 
 .footerWrap {
