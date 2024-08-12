@@ -1,5 +1,5 @@
 .str0 {
-	stroke:#afd200;
+	stroke: $green;
 	stroke-width:.57;
 	stroke-linecap:round;
 	stroke-linejoin:round
@@ -10,11 +10,11 @@
 }
 
 .fil2{
-	fill-rule:nonzero
+	fill-rule: nonzero;
 }
 
 .fil0,.fil7{
-	fill:#afd200
+	fill: $green;
 }
 
 .fil1{
@@ -23,11 +23,11 @@
 }
 
 .cross,.fil5,.fil8,.hand{
-	fill:#fefefe
+	fill:#fefefe;
 }
 
 .crosswrap,.fil6,.fil9,.hand_wrap{
-	fill:#00aaea
+	fill:$blue-1
 }
 
 .dms_outer{
@@ -59,82 +59,82 @@
 }
 
 .dms_icon path{
-	fill:#fff;
+	fill:$white;
 	transition:.35s ease-in-out
 }
 
 .dms_icon:hover,.dms_icon:hover .dms_link__blue,.dms_icon:hover .dms_link__green{
 	cursor:pointer;
-	color:#fff;
+	color:$white;
 	transition:.35s ease-in-out;
 	text-decoration:underline
 }
 
 .dms_icon:nth-child(n):hover{
-	background-color:#fff
+	background-color:$white
 }
 
 .dms_icon:nth-child(n):hover .fil0,.dms_icon:nth-child(n):hover .fil2,.dms_icon:nth-child(n):hover .fil7{
-	fill:#afd200
+	fill:$green
 }
 
 .dms_icon:nth-child(n):hover .fil1{
-	fill:#fff
+	fill:$white
 }
 
 .dms_icon:nth-child(n):hover .str0{
-	stroke:#afd200
+	stroke:$green
 }
 
 .dms_icon:nth-child(n):hover .cross,.dms_icon:nth-child(n):hover .fil8,.dms_icon:nth-child(n):hover .hand{
-	fill:#fff
+	fill:$white
 }
 
 .dms_icon:nth-child(n):hover .crosswrap,.dms_icon:nth-child(n):hover .fil9,.dms_icon:nth-child(n):hover .hand_wrap{
-	fill:#00aaea
+	fill:$blue-1
 }
 
 .dms_icon:nth-child(n) .fil1{
-	fill:#afd200;
+	fill:$green;
 	transition:.35s ease-in-out
 }
 
 .dms_icon:nth-child(n) .str0{
-	stroke:#fff;
+	stroke:$white;
 	transition:.35s ease-in-out
 }
 
 .dms_icon:nth-child(n) .cross,.dms_icon:nth-child(n) .fil8,.dms_icon:nth-child(n) .hand{
-	fill:#00aaea;
+	fill:$blue-1;
 	transition:.35s ease-in-out
 }
 
 .dms_icon__odd{
-	background-color:#afd200;
-	border:0.2rem solid #afd200;
+	background-color:$green;
+	border:0.2rem solid $green;
 	transition:.35s ease-in-out;
-	color:#fff
+	color:$white
 }
 
 .dms_icon__odd:hover{
-	color:#afd200
+	color:$green
 }
 
 .dms_icon__even{
-	background-color:#00aaea;
-	border:0.2rem solid #00aaea;
+	background-color:$blue-1;
+	border:0.2rem solid $blue-1;
 	transition:.35s ease-in-out;
-	color:#fff
+	color:$white
 }
 
 .dms_icon__even:hover{
-	color:#00aaea
+	color:$blue-1
 }
 
 .loyal {
-	fill:#fff;
+	fill:$white;
 }
 	
 .dms_icon:hover .loyal {
-	fill:#00aaea;
+	fill:$blue-1;
 }
