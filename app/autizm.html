@@ -26,223 +26,6 @@
 </head>
 
 <body>
-	<!-- МОДАЛЬНЫЕ ОКНА НАЧАЛО -->
-	<div class="overlay overlay-campaign">
-		<div class="popup popup-campaign">
-			<form id="form" class="popup-form">
-				<h1>Записаться на прием</h1>
-				<div class="userInfo mt-2">
-					<div class="col-lg-6">
-						<p class="mb-2">Напишите, как к вам обращаться</p>
-						<input type="text" placeholder="Иванов Иван Иванович" autocorrect="off"  autocomplete="name" required>
-						<p class="mt-2 mb-2">Ваш E-Mail</p>
-						<input type="email" placeholder="ivanov@mail.ru" autocorrect="off" autocomplete="email" autocapitalize="off">
-					</div>
-					<div class="col-lg-6">
-						<p class="mb-2">Введите номер телефона</p>
-						<input type="tel" class="telmask"  autocorrect="off" autocomplete="tel" placeholder="+7 900 111 22 33" required>
-						<p class="hint">не забудьте указать код города (для городских номеров)</p>
-						<p class="mb-2">Выберите удобную дату</p>
-						<div class="d-flex">
-							<input type="date" class="mr-2" autocorrect="off" autocomplete="date" placeholder="YYYY-MM-DD" >
-							<input type="time" autocorrect="off" autocomplete="time" placeholder="HH:MM" >
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-12 mt-2">
-					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
-					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
-					<div class="d-flex">
-						<div class="attention">
-							<button type="submit" class="btn-blue">Отправить</button>
-							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
-							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="close-popup close-campaign"></div>
-		</div>
-	</div> 
-
-	<div class="overlay overlay-question">
-		<div class="popup popup-question">
-			<form id="form" class="popup-form">
-				<h1>Задать вопрос</h1>
-				<div class="col-lg-12"><p>Напишите ваше имя</p></div>
-				<div class="col-lg-12"><input type="text" placeholder="Ваше имя" autocorrect="off" autocomplete="name" required></div>
-				<div class="col-lg-12"><p>Введите номер телефона</p></div>
-				<div class="col-lg-12"><input type="tel" class="telmask" autocorrect="off" autocomplete="tel" placeholder="+7 900 111 22 33" required name=""></div>
-				<div class="col-lg-12"><p>Или адрес электронной почты</p></div>
-				<div class="col-lg-12"><input type="еmail" placeholder="ivanov@mail.ru" autocorrect="off" autocomplete="email" autocapitalize="off"></div>
-				<div class="col-lg-12"><p>Ваш вопрос</p></div>
-				<div class="col-lg-12"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-				<div class="col-lg-12"><button type="submit" class="btn-blue">Отправить</button></div>	
-			</form>
-			<div class="close-popup close-question"></div> 
-		</div>
-	</div>
-
-	<div class="overlay overlay-suggestion">
-		<div class="popup popup-suggestion">
-			<form id="form" class="popup-form">
-				<h1>Жалобы и предложения</h1>
-				<div class="col-lg-12"><p>Напишите ваше имя</p></div>
-				<div class="col-lg-12"><input type="text" placeholder="Ваше имя" autocorrect="off" autocomplete="name" required></div>
-				<div class="col-lg-12"><p>Введите номер телефона</p></div>
-				<div class="col-lg-12"><input type="tel" class="telmask" placeholder="+7 900 111 22 33"  name="" autocorrect="off" autocomplete="tel" required></div>
-				<div class="col-lg-12"><p>Или адрес электронной почты</p></div>
-				<div class="col-lg-12"><input type="еmail" placeholder="ivanov@mail.ru" autocorrect="off" autocomplete="email" autocapitalize="off"></div>
-				<div class="col-lg-12"><p>Текст вашего сообщения</p></div>
-				<div class="col-lg-12"><textarea name="" id="" cols="30" rows="10"></textarea></div>
-				<div class="col-lg-12"><button type="submit" class="btn-blue">Отправить</button></div>
-			</form>
-			<div class="close-popup close-suggestion"></div>
-		</div>
-	</div>
-
-	<div class="overlay overlay-consultation">
-		<div class="popup popup-consultation">
-			<form id="form" class="popup-form">
-				<h1>Записаться на онлайн-консультацию</h1>
-				<div class="userInfo mt-4">
-					<div class="col-lg-6">
-						<p class="mb-2">Напишите, как к вам обращаться</p>
-						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="" autocorrect="off" autocomplete="name">
-						<p class="mt-3 mb-2">Ваш E-Mail</p>
-						<input type="email" placeholder="ivanov@mail.ru" name="" id="" autocorrect="off" autocomplete="email" autocapitalize="off">
-					</div>
-					<div class="col-lg-6">
-						<p class="mb-2">Введите номер телефона</p>
-						<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="" id="" autocorrect="off" autocomplete="tel">
-						<p class="hint">не забудьте указать код города (для городских номеров)</p>
-						<p class="mb-2">Выберите удобную дату</p>
-						<div class="d-flex">
-							<input type="date" placeholder="15 Июня" name="" id="" class="mr-2" required>
-							<input type="time" required>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-12 mt-4">
-					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
-					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
-					<p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
-					<div class="d-flex">
-						<div class="attention">
-							<button type="submit" class="btn-blue">Отправить</button>
-							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
-							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="close-popup close-consultation"></div>
-		</div>
-	</div>
-
-	<div class="overlay overlay-repost">
-		<div class="popup popup-repost">
-			<h1>Поделиться в соцсетях</h1>
-			<div class="row">
-				<div class="repost">
-					<div class="repost_item">
-						<a href="#" title="Поделиться в Instagram"></a>
-					</div>
-					<div class="repost_item">
-						<a href="#" title="Поделиться в VK"></a>
-					</div>
-					<div class="repost_item">
-						<a href="#" title="Поделиться в Одноклассниках"></a>
-					</div>
-					<div class="repost_item">
-						<a href="#" title="Поделиться в Facebook"></a>
-					</div>
-				</div>
-			</div>
-			<div class="close-popup close-repost"></div>
-		</div>
-	</div>
-
-	<div class="overlay overlay-call">
-		<div class="popup popup-call">
-			<form id="form" class="popup-form">
-				<h1>Заказать обратный звонок</h1>
-				<div class="col-lg-12"><p>Напишите ваше имя</p></div>
-				<div class="col-lg-12"><input type="text" placeholder="Ваше имя" autocorrect="off" autocomplete="name" required></div>
-				<div class="col-lg-12"><p>Введите номер телефона</p></div>
-				<div class="col-lg-12"><input type="tel" class="telmask" placeholder="+7 900 111 22 33" autocorrect="off" autocomplete="tel" required></div>
-				<div class="col-lg-12"><button type="submit" class="btn-blue">Отправить</button></div>
-			</form>
-			<div class="close-popup close-call"></div>
-		</div>
-	</div>
-
-	<div class="overlay overlay-review">
-		<div class="popup popup-review">
-			<form id="form" class="popup-form">
-				<h1>Оставить отзыв</h1>
-				<div class="userInfo mt-4">
-					<div class="col-lg-6">
-						<p class="mb-2">Напишите, как к вам обращаться</p>
-						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="" autocorrect="off" autocomplete="name">
-					</div>
-					<div class="col-lg-6">
-						<p class="mb-2">Ваш E-Mail</p>
-						<input type="email" placeholder="ivanov@mail.ru" name="" id="" autocorrect="off" autocomplete="email" autocapitalize="off">
-					</div>
-				</div>
-
-				<div class="col-lg-12 mt-4">
-					<p>Ваши впечатления о нас</p>
-					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
-					<p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
-					<div class="d-flex">
-						<div class="attention">
-							<button type="submit" class="btn-blue">Отправить</button>
-							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
-							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="close-popup close-review"></div>
-		</div>
-	</div>
-
-	<div class="overlay overlay-skype">
-		<div class="popup popup-skype">
-			<form id="form" class="popup-form">
-				<h1>Записаться на консультацию по Skype</h1>
-				<div class="userInfo mt-4">
-					<div class="col-lg-6">
-						<p class="mb-2">Напишите, как к вам обращаться</p>
-						<input type="text"  placeholder="Иванов Иван Иванович" name="" id="" autocorrect="off" autocomplete="name" required>
-					</div>
-					<div class="col-lg-6">
-						<p class="mb-2">Ваш E-Mail</p>
-						<input type="email" placeholder="ivanov@mail.ru" name="" id="" autocorrect="off" autocomplete="email" autocapitalize="off">
-					</div>
-				</div>
-
-				<div class="col-lg-12 mt-4">
-					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
-					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
-					<div class="d-flex">
-						<div class="attention">
-							<button type="submit" class="btn-blue">Отправить</button>
-							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
-							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
-						</div>
-					</div>
-				</div>
-			</form>
-			<div class="close-popup close-skype"></div>
-		</div>
-	</div>
-
-	<!-- HEADER НАЧАЛО -->
 	<header class="header_fluid" id="top">
 			<div class="header_fluid__info">
 				<div class="logo">
@@ -328,14 +111,14 @@
 		<ul class="breadcrumb">
 			<li class="breadcrumbItem"><a href="#">Главная</a></li>
 			<li class="breadcrumbItem"><a href="#">Методы лечения</a></li>
-			<li class="breadcrumbItem active">Какая-то болезнь</li>
+			<li class="breadcrumbItem active">Аутизм</li>
 		</ul>
 	</div>
 
 	<div class="container">
 		<article class="articleWrap">
 			<h1>Аутизм и задержки развития</h1>
-			<a class="back__link" href="#">Назад</a>
+			<img style="max-width: 100%; margin-top: 4rem;" src="https://deti-indigo74.ru/upload/iblock/d3c/466y5y8zc3krg03u7aa5k04n7myegum2.png">
 			<div class="articleWrap_nav" role="navigation">
 				<ul class="row">
 					<li><a href="#sympthom">Симптомы аутизма</a></li>
@@ -345,56 +128,58 @@
 					<li><a href="#heal">Лечение детского аутизма</a></li>
 				</ul>
 			</div>
+			
+			<h2 id="what">Можно ли вылечить аутизм?</h2>
 
-			<div class="mb-2">
-				Вступительный текст
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque omnis facere perferendis, numquam nesciunt dolores, necessitatibus ullam blanditiis, est repellat esse asperiores quod officiis, sequi modi assumenda dolor adipisci.
+			<div class="row">
+				<div class="col-lg-6">
+					Проект #аутизмсдавайся был запущен НИИ «Дети Индиго» с целью помочь малышам с аутизмом обрести своё полноценное будущее, а родителям, столкнувшимся с этим диагнозом — показать, что выход есть!
+					Помните, вы не одни, #аутизмсдавайся — это не просто хэштег, по которому на нашем сайте и в наших социальных сетях можно найти массу интересной и полезной информации об аутизме.
+				</div>
+				<div class="col-lg-6">
+					#аутизмсдавайся — это клич, который объединил тысячи особенных семей по всей России и за её пределами!
+					Мы не устанем повторять: аутизм — не приговор, скорректировать проявления аутизма можно и нужно и НИИ «Дети Индиго» обязательно в этом помогут!
+				</div>
 			</div>
 			
-			<div class="articlesHead d-flex mb-4">
-				<h2 id="what">Можно ли вылечить аутизм?</h2>
-			</div>
-			<div class="opinion_outer">
-				<div class="opinion_inner">
-					<div class="opinion_inner__head">
-						<h4>Мнение эксперта</h4>
+			<div class="verdict">
+				<div class="verdict__headerWrap">
+					<h3>МНЕНИЕ ЭКСПЕРТА</h3>
+					<div class="verdict__header">
+						<div class="verdict__photo">
+							<img src="https://deti-indigo74.ru/upload/iblock/f3a/8m52alv2kq0ccuiwv5wxmkjjo585lc0g.png" alt="Фото эксперта">
+						</div>
+						<div class="verdict__desc">
+							<p>Комментирует</p><br>
+							<b>КУЗИНА ОКСАНА ВЛАДИМИРОВНА</b><br><br>
+							<p>врач-невролог высшей категории, рефлексотерапевт, цефалголог, гирудотерапевт</p>
+						</div>
+						<button class="verdict__btn">О специалисте</button>
 					</div>
-					<div class="opinion_inner__content">
-						<div class="opinion_inner__content-specialist">
-							<div class="opinion_inner__content-specialist--photo">
-								<img data-lazy="https://deti-indigo74.ru/upload/medialibrary/9ed/9ed13f33898f735b1c7cc1e1360dee55.jpg" alt="">
-							</div>
-							<div class="opinion_inner__content-specialist--desc">
-								<h4>КУЗИНА <br> Оксана Владимировна</h4>
-								<b>Невролог</b> <b>Рефлексотерапевт</b> <b>Цефалголог</b> <b>Гирудотерапевт</b>
-								<button class="green button-question">Задать вопрос</button>
-							</div>
-						</div>
-						<div class="opinion_inner__content-text">
-							<h3>Можно ли вылечить ДЦП?</h3>
-							<p>
-								Каждый случай, безусловно, уникален, и ответить однозначно бывает сложно. Однако накопленный в НИИ “Дети Индиго” практический опыт позволяет утверждать, что даже тяжелые формы детского церебрального паралича поддаются коррекции.
-							</p>
-							<p>
-								Три фактора определяют успех и эффективность реабилитации:
-							</p>
-							<p>
-								Костюм «Регент» – это то новое в лечении ДЦП, что мы активно внедряем в свои схемы назначений уже сегодня. И можно смело утверждать, костюм “Регент” в сочетании с другими методиками дает прекрасные результаты. Сложно <a name="33"></a>переоценить роль аксиальной нагрузки при ДЦП: именно она позволяет вертикализовать пациента, что для пациентов с нарушением мозгового кровообращения уже служит огромным прорывом в лечении.
-							</p>
-						</div>
-						<img data-lazy="images/autism_collage.jpg" alt="">
-
-						<ul class="opinion_inner__content-nav">
-							<li><a href="#about_project">О проекте</a></li>
-							<li><a href="#video">Видео</a></li>
-							<li><a href="#qa">Вопрос-ответ</a></li>
-							<li><a href="#important">Полезно знать</a></li>
-						</ul>
-
-						<div class="mt-4 mb-4">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque omnis facere perferendis, numquam nesciunt dolores, necessitatibus ullam blanditiis, est repellat esse asperiores quod officiis, sequi modi assumenda dolor adipisci.
-						</div>
-					</div>
+				</div>
+				<div class="verdict__content">
+					<b><span style="color: #00aeef;">МОЖНО ЛИ ВЫЛЕЧИТЬ ДЦП?</span></b>
+					<p align="justify">
+						Каждый случай, безусловно, уникален, и ответить однозначно бывает сложно. Однако накопленный в НИИ “Дети Индиго” практический опыт позволяет утверждать, что даже тяжелые формы детского церебрального паралича поддаются коррекции. <br>
+						<br>
+					</p>
+					<p>Три фактора определяют успех и эффективность реабилитации:</p>
+					<ul class="checkMarks">
+						<li>ранняя диагностика;</li>
+						<li>комплексный всесторонний подход: прямым воздействием на мышцы и суставы, со стороны нервной системы;</li>
+						<li>настойчивость, терпение и любовь.</li>
+					</ul>
+					<p align="justify">Костюм "Регент" – это то новое в лечении ДЦП, что мы активно внедряем в свои схемы назначений уже сегодня. И можно смело утверждать: костюм “Регент” в сочетании с другими методиками дает прекрасные результаты. Сложно <a name="33"></a>переоценить роль аксиальной нагрузки при ДЦП: именно она позволяет вертикализовать пациента, что для пациентов с нарушением мозгового кровообращения уже служит огромным прорывом в лечении.
+					</p>
+					<br>
+					<p align="justify">Однако нам мало восстановить моторику при ДЦП, снять спазмы, гипер- и дискинезы. Важно исключить все те последствия, какие несет с собой для мозга ДЦП.
+					</p>
+					<br>
+					<p align="justify"><span><b>Костюм “Регент” как раз не только обучает двигательным навыкам, но и в значительной степени стимулирует интеллект. Вот почему его успешно применяют и в коррекции гипервозбудимости, и дефиците внимания.</b> </span>
+					</p>
+					<br>
+					<p align="justify">Так возможно ли вылечить ДЦП? Думаю, для себя с ответом на этот вопрос вы уже определились. А мы готовы вам оказать профессиональную современную помощь!
+					</p>
 				</div>
 			</div>
 			

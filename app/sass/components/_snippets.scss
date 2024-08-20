@@ -1107,18 +1107,20 @@
 
 
 .verdict {
+	margin-top: 3rem;
 	&__headerWrap {
 		padding: 1.2rem;
 		background-color: $green-1;
 		h3 {
-			margin: 0;
+			margin: 2.4rem 0;
 			color: #000!important;
 		}
 	}
 	&__header {
 		display: flex;
-		align-items: end;
+		align-items: flex-start;
 		flex-wrap: wrap;
+		position: relative;
 		img {
 			height: 16.8rem;
 			width: 100%;
@@ -1127,6 +1129,7 @@
 	}
 
 	&__btn {
+		background-color: $white;
 		border: 0.2rem solid $blue;
 		border-radius: $brd-radius;
 		width: 17rem;
@@ -1134,6 +1137,9 @@
 		padding: 1.6rem 2rem;
 		color: $blue;
 		font-weight: 700;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 
 	&__photo {
@@ -1143,7 +1149,7 @@
 
 	&__desc {
 		max-width: 75rem;
-		padding: 0 2.5rem;
+		padding: 1.2rem 2rem 0 2rem;
 	}
 
 	&__content {
@@ -1296,8 +1302,6 @@
 }
 
 .videoBlock {
-	background-color: $blue;
-    color: $white;
 	margin: 12rem 0 3.2rem 0;
 	padding: 0 2rem 2.4rem 2rem;
 	position: relative;
@@ -1314,7 +1318,8 @@
 		background-color: $blue;
 		border-radius: $brd-radius;
 		color: $white;
-		padding: 2.4rem 0 2rem 0;
+		padding: 2.4rem;
+		margin-bottom: 3.2rem;
 	}
 	&__slider {
 		&-item {
@@ -1335,7 +1340,7 @@
 		&__video {
 			border-radius: $brd-radius;
 			width: 100%;
-			height: 31.2rem;
+			height: 28.4rem!important;
 			margin-bottom: 2.4rem;
 		}
 		.slick-track {
@@ -1775,7 +1780,7 @@
 			margin-top: 3.2rem;
 			width: 100%;
 		}
-	}
+	}/*
 	&__anotherCity {
 		background: url("data:image/svg+xml,%3Csvg width='447' height='260' viewBox='0 0 447 260' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_318_3140)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M465.966 320.746C436.016 357.058 461.294 434.718 416.96 448.723C374.167 462.24 359.97 385.674 321.36 366.425C290.053 350.816 244.376 373.007 218.479 349.768C192.292 326.269 185.849 284.997 190.318 248.834C194.522 214.814 216.124 183.839 241.919 160.091C263.652 140.084 298.178 145.71 321.697 127.886C351.558 105.255 359.817 59.2113 394.087 44.7712C433.024 28.3642 481.173 25.1365 515.594 46.1832C550.319 67.416 561.219 112.57 570.6 152.7C579.303 189.928 588.151 232.896 567.133 266.651C546.461 299.851 490.915 290.498 465.966 320.746Z' fill='%23AFD200'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M111.734 221.939C106.91 245 141.501 251.499 121.504 289.5C101.508 327.501 27.1863 295.904 21.1376 272.541C15.0889 249.178 32.6925 240.063 21.1376 212.143C9.16591 159.721 51.5048 169 77.5028 171.5C103.501 174 123.147 123 148.001 155.5C172.855 188 116.559 198.877 111.734 221.939Z' fill='%23AFD200'/%3E%3Cpath d='M99.499 270C79.499 222.5 95.499 151.467 161.499 156C199.93 158.639 198.499 138.499 247.499 126.999C296.499 115.499 292.999 210.499 370.499 174.999' stroke='white' stroke-width='2' stroke-linecap='round' stroke-dasharray='8 8'/%3E%3Cpath d='M370.453 137.178C374.109 137.178 377.033 140.046 377.033 143.629C377.033 147.213 374.109 150.081 370.453 150.081C368.708 150.081 367.034 149.401 365.8 148.191C364.567 146.981 363.873 145.34 363.873 143.629C363.873 140.046 366.798 137.178 370.453 137.178ZM370.453 168C373.499 168 382.882 147.93 382.882 147.93C383.779 145.947 384.145 143.773 383.946 141.613C383.748 139.453 382.991 137.378 381.747 135.584C380.503 133.791 378.813 132.338 376.837 131.362C374.861 130.387 372.664 129.922 370.453 130.011C360.949 130.011 354.369 140.046 358.024 147.93C358.024 147.93 367.407 168 370.453 168Z' fill='%23FF5268'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_318_3140'%3E%3Crect width='447' height='260' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") right center / contain no-repeat;
 		background-color: $blue;
@@ -1794,7 +1799,7 @@
 			border: 0.2rem solid $white;
 			margin-top: 3.2rem;
 		}
-	}
+	}*/
 }
 
 .onlineConsultationBlock {
